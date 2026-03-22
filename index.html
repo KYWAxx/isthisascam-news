@@ -760,7 +760,12 @@
       });
 
       if (res.ok) {
-        successEl.style.display = 'block';
+        const data = await res.json();
+        if (data.checklist) {
+          window.location.href = data.checklist;
+        } else {
+          successEl.style.display = 'block';
+        }
         document.getElementById(inputId).value = '';
         btn.textContent = '✓ DONE';
       } else {
