@@ -623,7 +623,7 @@
     </div>
     <div class="signup-note">Free. Weekly. No spam. Unsubscribe any time.</div>
     <div class="signup-success" id="heroSuccess">
-      ✓ You're in. First alert lands Wednesday morning.
+      ✓ You're in. Check your email for your free Scam Alert Checklist. First alert lands Wednesday.
     </div>
     <div class="signup-error" id="heroError"></div>
   </div>
@@ -720,7 +720,7 @@
     </div>
     <div class="final-note">No ads. No spam. Unsubscribe any time.</div>
     <div class="signup-success" id="finalSuccess" style="max-width:440px;margin:16px auto 0;">
-      ✓ You're in. First alert lands Wednesday morning.
+      ✓ You're in. Check your email for your free Scam Alert Checklist. First alert lands Wednesday.
     </div>
     <div class="signup-error" id="finalError"></div>
   </div>
@@ -760,12 +760,7 @@
       });
 
       if (res.ok) {
-        const data = await res.json();
-        if (data.checklist) {
-          window.location.href = data.checklist;
-        } else {
-          successEl.style.display = 'block';
-        }
+        successEl.style.display = 'block';
         document.getElementById(inputId).value = '';
         btn.textContent = '✓ DONE';
       } else {
