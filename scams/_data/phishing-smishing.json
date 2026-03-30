@@ -1,0 +1,38 @@
+{
+  "title": "Phishing & Smishing",
+  "meta_description": "Learn how to protect your aging parents from phishing and smishing scams. Get expert advice on spotting and avoiding these dangerous schemes.",
+  "overview": "Phishing and smishing are two common types of fraud that target unsuspecting victims, often including older adults who may be less familiar with online security measures. Phishing occurs through email or instant messaging, where scammers impersonate legitimate companies or individuals to steal sensitive information such as passwords and financial details. Smishing, on the other hand, uses text messages for similar fraudulent activities. According to the Federal Trade Commission (FTC), phishing and related scams cost Americans over $140 million in 2022 alone. The Better Business Bureau (BBB) reports that older adults are particularly vulnerable due to a lack of digital literacy and reliance on technology for communication.",
+  "how_it_works": [
+    "Step 1: Scammers send an email or text message appearing to be from a legitimate source.",
+    "Step 2: The message contains urgent language, threatening consequences if the recipient doesn't act immediately.",
+    "Step 3: A link is provided that leads to a fake website designed to capture personal information.",
+    "Step 4: Once the scammer has this data, they can access bank accounts or open new lines of credit."
+  ],
+  "examples": [
+    "Jane received an email from her bank stating there was unusual activity on her account. The message asked her to click a link and verify her identity by entering her full banking details.",
+    "Bob got a text saying he needed to update his PayPal password immediately to avoid suspension. He clicked the link, only to find out later that all his money had been drained."
+  ],
+  "red_flags": [
+    "Urgent or threatening language in messages",
+    "Requests for personal information via email or text",
+    "Unfamiliar phone numbers or email addresses",
+    "Spelling and grammar errors in official-looking communications",
+    "Links to unfamiliar websites"
+  ],
+  "what_to_do": [
+    "Never click on links from unknown senders.",
+    "Contact the supposed sender directly using a known phone number or website, not one provided in the message.",
+    "Report suspicious emails to your bank or service provider immediately.",
+    "Use two-factor authentication wherever possible."
+  ],
+  "entry_points": [
+    "Emails that mimic legitimate financial institutions",
+    "Text messages posing as customer support services",
+    "Social media platforms where scammers can send direct messages"
+  ],
+  "related_scams": [
+    "identity-theft-protection",
+    "tech-support-scams",
+    "grandparent-scam"
+  ]
+}

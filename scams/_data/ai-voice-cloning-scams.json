@@ -1,0 +1,38 @@
+{
+  "title": "AI Voice Cloning Scams",
+  "meta_description": "Learn about AI voice cloning scams targeting seniors, how they operate, and protective measures.",
+  "overview": "AI voice cloning scams are a sophisticated form of fraud where scammers use artificial intelligence to mimic the voices of trusted individuals such as family members or financial advisors. By using deepfake technology, these scammers can create realistic audio messages that trick victims into thinking their loved ones are in distress and need immediate financial assistance. According to the Federal Trade Commission (FTC), voice cloning scams have been on the rise since 2019, with reported losses totaling millions of dollars. This scam is particularly dangerous for seniors who may be more trusting or less technologically savvy.",
+  "how_it_works": [
+    "Step 1: Scammers gather audio samples from publicly available sources such as YouTube videos or social media.",
+    "Step 2: They use AI software to analyze and replicate the voice of a targeted individual, creating convincing fake messages.",
+    "Step 3: The scammer contacts the victim using a spoofed phone number or via email, playing the cloned message.",
+    "Step 4: Under the guise of urgency or distress, they ask for financial assistance, often urging quick action to avoid further trouble."
+  ],
+  "examples": [
+    "John's mother received a call from her son, John. The voice sounded exactly like him but was asking for an urgent money transfer because he had been arrested abroad and needed bail. She immediately wired the money before realizing something wasn't right.",
+    "Maria got an email from what appeared to be her financial advisor with a recorded message attached, explaining that she needed to urgently move funds into a new account due to suspicious activity. The cloned voice was so convincing that Maria almost complied."
+  ],
+  "red_flags": [
+    "The caller is requesting immediate action without giving time for verification.",
+    "The request involves transferring money or providing sensitive information over the phone.",
+    "The message sounds urgent and creates a sense of panic, compelling quick decisions.",
+    "There are unusual delays in the speech pattern or slight distortions in voice quality.",
+    "The contact method seems impersonal (e.g., unknown numbers or unsolicited emails)"
+  ],
+  "what_to_do": [
+    "Verify the identity of the caller using an alternate means of communication, such as calling back a known number.",
+    "Discuss potential scams with family members and establish a code word or phrase to confirm authenticity in calls.",
+    "Install security software on devices that can detect suspicious activity and cloned voices.",
+    "Educate yourself and your loved ones about common red flags associated with voice cloning scams."
+  ],
+  "entry_points": [
+    "Spoofed phone numbers making unexpected calls",
+    "Emails or text messages containing audio files from unknown senders",
+    "Social media platforms where scammers gather data to clone voices"
+  ],
+  "related_scams": [
+    "imposter-scams",
+    "elder-financial-fraud",
+    "tech-support-scams"
+  ]
+}

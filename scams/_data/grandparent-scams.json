@@ -1,0 +1,38 @@
+{
+  "title": "Grandparent Scams",
+  "meta_description": "Protect your aging parents from grandparent scams, where fraudsters impersonate grandchildren in distress.",
+  "overview": "Grandparent scams are a particularly cruel form of fraud targeting older adults. In these schemes, scammers call and pretend to be the victim's grandchild, claiming they need urgent financial help due to an emergency such as legal troubles or medical bills. According to the Federal Trade Commission (FTC), individuals reported losing over $180 million in 2022 alone from this type of scam. The FBI\u2019s Internet Crime Complaint Center (IC3) reports that seniors are often chosen because they may be more trusting and less aware of common fraud tactics, making them vulnerable targets.",
+  "how_it_works": [
+    "Step 1: Scammers call the grandparent using a spoofed phone number to appear as if it's coming from their grandchild's location or device.",
+    "Step 2: The scammer claims they are in distress and need immediate funds for an urgent situation, such as paying bail or medical bills.",
+    "Step 3: They urge the grandparent not to inform anyone else about the emergency to avoid embarrassment or further complications.",
+    "Step 4: Scammers request money be sent via wire transfer services like Western Union or through gift cards."
+  ],
+  "examples": [
+    "Jane, a retired schoolteacher, received a call from someone claiming to be her grandson. The voice sounded urgent and panicked as they said he was in Europe and had been arrested for drug possession. He asked Jane not to tell his parents and requested money immediately.",
+    "Tom\u2019s daughter-in-law called him upset because Tom's son hadn't answered his phone all day. A few hours later, Tom received a call from someone who claimed to be his son, saying he had an accident and needed bail money right away."
+  ],
+  "red_flags": [
+    "The caller is asking for immediate financial help without providing specific details or proof.",
+    "The caller insists on secrecy and not telling other family members about the situation.",
+    "Requests are made for cash transfers through untraceable methods such as gift cards, wire transfer services, or cryptocurrency.",
+    "The scammer uses emotional manipulation to create a sense of urgency and fear.",
+    "The call appears to come from a local number but is actually spoofed by scammers."
+  ],
+  "what_to_do": [
+    "Verify the identity of the caller by asking specific questions that only your grandchild would know.",
+    "Hang up and contact the alleged 'grandchild' or their parents directly through known phone numbers or social media to confirm the situation.",
+    "Report any suspicious calls to local law enforcement and the Federal Trade Commission (FTC) at ftc.gov/complaint.",
+    "Educate family members about common scam tactics and encourage them to be cautious of unsolicited requests for money."
+  ],
+  "entry_points": [
+    "Phone calls using spoofed numbers or robocalls",
+    "Social media messages where scammers impersonate relatives",
+    "Emails that mimic the style of your grandchild\u2019s usual communication"
+  ],
+  "related_scams": [
+    "romance-scams",
+    "tech-support-scams",
+    "investment-fraud"
+  ]
+}

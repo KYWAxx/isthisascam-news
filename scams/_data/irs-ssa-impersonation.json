@@ -1,0 +1,38 @@
+{
+  "title": "IRS & SSA Impersonation",
+  "meta_description": "Protect your aging parents from IRS and SSA impersonators. Learn the tactics, red flags, and how to respond.",
+  "overview": "Impersonation scams involving the Internal Revenue Service (IRS) and Social Security Administration (SSA) are alarmingly common and can cause significant financial harm to unsuspecting victims. According to data from the Federal Trade Commission (FTC), consumers reported losing over $42 million to these types of scams in 2021 alone. Scammers often claim that recipients owe back taxes or Social Security benefits, creating a sense of urgency that leads people to hand over their personal and financial information without verifying the legitimacy of the request.",
+  "how_it_works": [
+    "Step 1: The scammer contacts the victim through phone calls, emails, or even in-person visits.",
+    "Step 2: The caller claims to be from the IRS or SSA and states that there is a problem with the recipient's account or tax return.",
+    "Step 3: Scammers may threaten legal action or arrest if the individual does not comply with their demands immediately.",
+    "Step 4: They request personal details like Social Security numbers, bank accounts, or credit card information to 'resolve' the issue."
+  ],
+  "examples": [
+    "Alice received a call from someone claiming to be an IRS agent stating she owed back taxes and must pay immediately via prepaid debit cards. She was told not to tell anyone about this or risk arrest.",
+    "Bob got an email from a spoofed SSA address saying his benefits would cease unless he verified personal information over the phone."
+  ],
+  "red_flags": [
+    "Unsolicited contact demanding immediate payment of taxes or fees.",
+    "Requests for personal details like Social Security numbers or bank account information to 'resolve' issues.",
+    "Threatening language, suggesting legal action if demands are not met.",
+    "Instructions to pay via unusual methods such as gift cards or wire transfers.",
+    "Contact over the phone rather than through official mail or a secure government website."
+  ],
+  "what_to_do": [
+    "Hang up and do not provide any personal information.",
+    "Call back using the official number from the IRS (1-800-829-1040) or SSA (1-800-772-1213) to verify if there is a real issue.",
+    "Report the incident to the FTC at IdentityTheft.gov and to the Social Security Administration's Fraud Hotline at 1-800-269-0271.",
+    "Check for updates on official government websites regarding common scams."
+  ],
+  "entry_points": [
+    "Phone calls, often with spoofed numbers making them appear legitimate.",
+    "Emails containing fake invoices or threatening letters from the IRS or SSA.",
+    "Text messages demanding immediate action to avoid legal consequences."
+  ],
+  "related_scams": [
+    "unexpected-debt",
+    "phishing-emails",
+    "tech-support-scams"
+  ]
+}

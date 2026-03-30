@@ -3,739 +3,768 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Is This a Scam? — Weekly fraud alerts for anyone with aging parents</title>
-<meta name="description" content="A weekly email that tells you exactly what scam is targeting your parents right now — and what to say to protect them.">
+<title>Is This a Scam? — Protect your family from fraud</title>
+<meta name="description" content="Free weekly scam alerts for anyone with aging parents. Know exactly what scam is targeting your family — and what to say to stop it.">
+<meta property="og:title" content="Is This a Scam? — Protect your family from fraud">
+<meta property="og:description" content="Free weekly scam alerts backed by FTC, FBI, and BBB data. Protect the people you love.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isthisascam.news">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --black: #0a0a0a;
-    --white: #f5f0e8;
-    --red: #d42b2b;
-    --red-dark: #9a1f1f;
-    --gray: #2a2a2a;
-    --muted: #888;
-    --display: 'Bebas Neue', sans-serif;
-    --serif: 'Playfair Display', serif;
-    --sans: 'DM Sans', sans-serif;
+    --navy: #1B2A4A;
+    --navy-light: #2D3E5F;
+    --blue: #2563EB;
+    --blue-light: #EFF6FF;
+    --amber: #D97706;
+    --amber-light: #FEF3C7;
+    --bg: #F8F9FA;
+    --white: #FFFFFF;
+    --text: #1B2A4A;
+    --text-secondary: #4B5563;
+    --border: #E5E7EB;
+    --serif: 'Merriweather', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--black);
-    color: var(--white);
+    background: var(--bg);
+    color: var(--text);
     font-family: var(--sans);
     font-size: 16px;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  /* ── Grain overlay ── */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 1000;
-    opacity: 0.4;
+    line-height: 1.7;
   }
 
   /* ── Nav ── */
-  nav {
+  .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    border-bottom: 1px solid #1e1e1e;
+    padding: 16px 40px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
-    background: rgba(10,10,10,0.95);
-    backdrop-filter: blur(8px);
     z-index: 100;
   }
 
-  .nav-logo {
-    font-family: var(--display);
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: var(--white);
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
+    color: var(--navy);
   }
 
-  .nav-logo span { color: var(--red); }
+  .nav-shield { font-size: 24px; }
+
+  .nav-name {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--navy); }
 
   .nav-cta {
-    background: var(--red);
-    color: var(--white);
-    border: none;
+    background: var(--blue);
+    color: var(--white) !important;
     padding: 10px 22px;
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    transition: background 0.2s;
-    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
   }
 
-  .nav-cta:hover { background: var(--red-dark); }
+  .nav-cta:hover { background: #1D4ED8 !important; }
+
+  .nav-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--navy);
+  }
 
   /* ── Hero ── */
   .hero {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px 40px;
-    position: relative;
-    overflow: hidden;
+    background: var(--white);
+    padding: 80px 40px 100px;
+    text-align: center;
   }
 
-  .hero::after {
-    content: '?';
-    position: absolute;
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: var(--display);
-    font-size: clamp(300px, 40vw, 600px);
-    color: #1a1a1a;
-    line-height: 1;
-    pointer-events: none;
-    user-select: none;
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue-light);
+    color: var(--blue);
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 32px;
   }
 
-  .hero-eyebrow {
-    font-family: var(--sans);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 24px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.1s;
-  }
-
-  .hero-headline {
-    font-family: var(--display);
-    font-size: clamp(64px, 10vw, 140px);
-    line-height: 0.9;
-    letter-spacing: 2px;
-    color: var(--white);
-    max-width: 900px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.2s;
-  }
-
-  .hero-headline em {
+  .hero h1 {
     font-family: var(--serif);
-    font-style: italic;
-    color: var(--red);
-    font-size: 0.85em;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 20px;
   }
 
   .hero-sub {
-    margin-top: 32px;
     font-size: 18px;
-    font-weight: 300;
-    color: #aaa;
-    max-width: 560px;
+    color: var(--text-secondary);
+    max-width: 540px;
+    margin: 0 auto 40px;
     line-height: 1.7;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.35s;
-  }
-
-  .hero-sub strong { color: var(--white); font-weight: 500; }
-
-  /* ── Signup form ── */
-  .signup-block {
-    margin-top: 48px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.5s;
   }
 
   .signup-form {
     display: flex;
-    gap: 0;
+    gap: 12px;
     max-width: 480px;
+    margin: 0 auto 16px;
   }
 
   .signup-form input {
     flex: 1;
-    background: #161616;
-    border: 1px solid #333;
-    border-right: none;
-    color: var(--white);
+    padding: 14px 20px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
     font-family: var(--sans);
     font-size: 15px;
-    padding: 16px 20px;
+    color: var(--text);
+    background: var(--white);
     outline: none;
     transition: border-color 0.2s;
   }
 
-  .signup-form input::placeholder { color: #555; }
-  .signup-form input:focus { border-color: var(--red); }
+  .signup-form input:focus { border-color: var(--blue); }
+  .signup-form input::placeholder { color: #9CA3AF; }
 
   .signup-form button {
-    background: var(--red);
+    padding: 14px 28px;
+    background: var(--blue);
     color: var(--white);
-    border: 1px solid var(--red);
-    font-family: var(--display);
-    font-size: 18px;
-    letter-spacing: 2px;
-    padding: 16px 28px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
-    white-space: nowrap;
     transition: background 0.2s;
+    white-space: nowrap;
   }
 
-  .signup-form button:hover { background: var(--red-dark); border-color: var(--red-dark); }
+  .signup-form button:hover { background: #1D4ED8; }
   .signup-form button:disabled { opacity: 0.6; cursor: not-allowed; }
 
   .signup-note {
-    margin-top: 12px;
-    font-size: 12px;
-    color: var(--muted);
+    font-size: 13px;
+    color: #9CA3AF;
   }
 
   .signup-success {
     display: none;
-    margin-top: 16px;
-    padding: 14px 20px;
-    background: #0d2018;
-    border: 1px solid #1e5c36;
-    color: #4caf82;
-    font-size: 14px;
-    font-family: var(--sans);
+    color: #059669;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 12px;
   }
 
   .signup-error {
     display: none;
-    margin-top: 12px;
-    font-size: 13px;
-    color: var(--red);
-  }
-
-  /* ── Ticker ── */
-  .ticker-wrap {
-    background: var(--red);
-    padding: 10px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .ticker {
-    display: inline-block;
-    animation: ticker 30s linear infinite;
-    font-family: var(--display);
+    color: #DC2626;
     font-size: 14px;
-    letter-spacing: 3px;
+    margin-top: 8px;
   }
 
-  .ticker span {
-    margin: 0 40px;
-    opacity: 0.9;
-  }
-
-  .ticker span::before {
-    content: '⚠';
-    margin-right: 12px;
-    opacity: 0.7;
-  }
-
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  /* ── Why section ── */
-  .why {
-    padding: 120px 40px;
-    max-width: 1200px;
+  /* ── Sections ── */
+  .section {
+    padding: 80px 40px;
+    max-width: 1100px;
     margin: 0 auto;
   }
+
+  .section-alt { background: var(--blue-light); }
+  .section-alt .section { padding: 80px 40px; }
 
   .section-label {
-    font-family: var(--sans);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 16px;
-  }
-
-  .why-headline {
-    font-family: var(--display);
-    font-size: clamp(40px, 6vw, 72px);
-    line-height: 1;
-    letter-spacing: 1px;
-    max-width: 700px;
-    margin-bottom: 60px;
-  }
-
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-  }
-
-  .why-card {
-    background: #111;
-    padding: 40px 32px;
-    border-top: 3px solid transparent;
-    transition: border-color 0.2s;
-  }
-
-  .why-card:hover { border-color: var(--red); }
-
-  .why-num {
-    font-family: var(--display);
-    font-size: 64px;
-    color: #222;
-    line-height: 1;
-    margin-bottom: 16px;
-  }
-
-  .why-title {
-    font-family: var(--serif);
-    font-size: 22px;
+    font-size: 12px;
     font-weight: 700;
-    margin-bottom: 12px;
-    line-height: 1.3;
-  }
-
-  .why-body {
-    font-size: 14px;
-    color: #888;
-    line-height: 1.7;
-  }
-
-  /* ── Sample issue ── */
-  .sample {
-    background: #0d0d0d;
-    border-top: 1px solid #1e1e1e;
-    border-bottom: 1px solid #1e1e1e;
-    padding: 100px 40px;
-  }
-
-  .sample-inner {
-    max-width: 680px;
-    margin: 0 auto;
-  }
-
-  .sample-label {
-    font-family: var(--sans);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 8px;
-  }
-
-  .sample-headline {
-    font-family: var(--display);
-    font-size: clamp(36px, 5vw, 56px);
-    letter-spacing: 1px;
-    margin-bottom: 48px;
-    line-height: 1;
-  }
-
-  .email-preview {
-    background: #fff;
-    color: #1a1a1a;
-    padding: 40px;
-    font-family: Georgia, serif;
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .email-header {
-    border-bottom: 3px solid #d42b2b;
-    padding-bottom: 20px;
-    margin-bottom: 24px;
-  }
-
-  .email-brand {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 28px;
     letter-spacing: 3px;
-    color: #0a0a0a;
-  }
-
-  .email-tagline {
-    font-size: 12px;
-    color: #888;
-    font-family: Arial, sans-serif;
-    margin-top: 4px;
-  }
-
-  .email-section {
-    margin-bottom: 28px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .email-section-label {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
     text-transform: uppercase;
-    color: #d42b2b;
-    margin-bottom: 8px;
+    color: var(--blue);
+    margin-bottom: 12px;
   }
 
-  .email-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.3;
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.25;
   }
 
-  .email-section p {
-    font-size: 14px;
-    color: #444;
+  .section-subtitle {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 48px;
     line-height: 1.7;
   }
 
-  .email-alert {
-    background: #fff8f8;
-    border-left: 3px solid #d42b2b;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-    font-size: 13px;
-    color: #333;
-  }
-
-  .email-alert strong { color: #d42b2b; }
-
-  /* ── Stats ── */
-  .stats {
-    padding: 100px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-  }
-
-  .stat-num {
-    font-family: var(--display);
-    font-size: clamp(48px, 7vw, 80px);
-    color: var(--red);
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .stat-label {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-    max-width: 200px;
-  }
-
-  /* ── Final CTA ── */
-  .final-cta {
-    padding: 120px 40px;
+  /* ── Trust bar ── */
+  .trust-bar {
+    background: var(--navy);
+    padding: 28px 40px;
     text-align: center;
-    border-top: 1px solid #1e1e1e;
-    position: relative;
-    overflow: hidden;
   }
 
-  .final-cta::before {
-    content: 'PROTECT THEM';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--display);
-    font-size: clamp(60px, 15vw, 200px);
-    color: #111;
-    white-space: nowrap;
-    pointer-events: none;
-    letter-spacing: 10px;
-  }
-
-  .final-cta-inner { position: relative; z-index: 1; }
-
-  .final-headline {
-    font-family: var(--display);
-    font-size: clamp(40px, 6vw, 72px);
-    letter-spacing: 2px;
-    margin-bottom: 16px;
-    line-height: 1;
-  }
-
-  .final-sub {
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 40px;
-    font-weight: 300;
-  }
-
-  .final-form {
+  .trust-inner {
     display: flex;
-    gap: 0;
-    max-width: 440px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
     margin: 0 auto;
   }
 
-  .final-form input {
-    flex: 1;
-    background: #161616;
-    border: 1px solid #333;
-    border-right: none;
-    color: var(--white);
-    font-family: var(--sans);
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .trust-icon { font-size: 20px; }
+
+  /* ── Cards grid ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 30px rgba(27,42,74,0.08);
+    transform: translateY(-2px);
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card-icon-blue { background: var(--blue-light); }
+  .card-icon-amber { background: var(--amber-light); }
+
+  .card h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .card p {
     font-size: 15px;
-    padding: 16px 20px;
-    outline: none;
-    transition: border-color 0.2s;
+    color: var(--text-secondary);
+    line-height: 1.7;
   }
 
-  .final-form input::placeholder { color: #555; }
-  .final-form input:focus { border-color: var(--red); }
+  /* ── Scam library teaser ── */
+  .scam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
 
-  .final-form button {
-    background: var(--red);
+  .scam-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    display: block;
+  }
+
+  .scam-card:hover {
+    border-color: var(--blue);
+    box-shadow: 0 4px 16px rgba(37,99,235,0.08);
+  }
+
+  .scam-card-icon { font-size: 28px; margin-bottom: 12px; }
+
+  .scam-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .scam-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  .scam-card .arrow {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+
+  .scam-browse-all {
+    text-align: center;
+    margin-top: 36px;
+  }
+
+  .btn-outline {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover {
+    background: var(--blue);
     color: var(--white);
-    border: 1px solid var(--red);
-    font-family: var(--display);
-    font-size: 18px;
-    letter-spacing: 2px;
-    padding: 16px 28px;
-    cursor: pointer;
-    transition: background 0.2s;
   }
 
-  .final-form button:hover { background: var(--red-dark); border-color: var(--red-dark); }
-  .final-form button:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  .final-note {
-    margin-top: 14px;
-    font-size: 12px;
-    color: #444;
+  /* ── Resources ── */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
   }
+
+  .resource-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: box-shadow 0.2s;
+  }
+
+  .resource-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+
+  .resource-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+  }
+
+  .resource-card h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+
+  .resource-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  /* ── Bottom CTA ── */
+  .bottom-cta {
+    background: var(--navy);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .bottom-cta h2 {
+    font-family: var(--serif);
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .bottom-cta p {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bottom-cta .signup-form input {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.2);
+    color: var(--white);
+  }
+
+  .bottom-cta .signup-form input::placeholder { color: rgba(255,255,255,0.4); }
+  .bottom-cta .signup-form input:focus { border-color: var(--blue); }
+
+  .bottom-cta .signup-note { color: rgba(255,255,255,0.4); }
+  .bottom-cta .signup-success { color: #34D399; }
 
   /* ── Footer ── */
   footer {
-    padding: 32px 40px;
-    border-top: 1px solid #1a1a1a;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 48px 40px;
+  }
+
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 12px;
-    color: #444;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 
-  .footer-logo {
-    font-family: var(--display);
+  .footer-brand {
+    font-family: var(--serif);
     font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+    color: var(--text-secondary);
+    max-width: 280px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 48px;
+  }
+
+  .footer-col h5 {
+    font-size: 12px;
+    font-weight: 700;
     letter-spacing: 2px;
-    color: #333;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 12px;
   }
 
-  .footer-logo span { color: #4a1a1a; }
-
-  /* ── Animations ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  .footer-col a {
+    display: block;
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s;
   }
 
-  .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
+  .footer-col a:hover { color: var(--blue); }
 
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: #9CA3AF;
+    text-align: center;
   }
 
   /* ── Mobile ── */
   @media (max-width: 768px) {
-    nav { padding: 16px 20px; }
-    .hero { padding: 60px 20px; min-height: 80vh; }
-    .hero::after { display: none; }
-    .why { padding: 80px 20px; }
-    .why-grid { grid-template-columns: 1fr; gap: 2px; }
-    .sample { padding: 80px 20px; }
-    .email-preview { padding: 24px; }
-    .stats { padding: 80px 20px; }
-    .stats-grid { grid-template-columns: 1fr; gap: 40px; }
-    .final-cta { padding: 80px 20px; }
-    footer { padding: 24px 20px; flex-direction: column; gap: 12px; text-align: center; }
+    .nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: block; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      padding: 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 16px;
+    }
+    .hero { padding: 48px 20px 64px; }
     .signup-form { flex-direction: column; }
-    .signup-form input { border-right: 1px solid #333; border-bottom: none; }
-    .final-form { flex-direction: column; }
-    .final-form input { border-right: 1px solid #333; border-bottom: none; }
+    .section { padding: 48px 20px; }
+    .section-alt .section { padding: 48px 20px; }
+    .trust-inner { gap: 20px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .scam-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+    .bottom-cta { padding: 48px 20px; }
+    .bottom-cta .signup-form { flex-direction: column; }
+    footer { padding: 32px 20px; }
+    .footer-inner { flex-direction: column; gap: 32px; }
+    .footer-links { flex-direction: column; gap: 24px; }
   }
 </style>
 </head>
 <body>
 
-<nav>
-  <a href="/" class="nav-logo">IS THIS A <span>SCAM?</span></a>
-  <a href="/scams/" style="color:#888;font-size:13px;font-family:'DM Sans',sans-serif;text-decoration:none;margin-right:20px;">Browse Scams</a>
-  <a href="#signup" class="nav-cta">Get the Alert</a>
+<!-- ── Nav ── -->
+<nav class="nav">
+  <a href="/" class="nav-brand">
+    <span class="nav-shield">🛡️</span>
+    <span class="nav-name">Is This a Scam?</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/scams/">Scam Library</a></li>
+    <li><a href="#signup">Newsletter</a></li>
+    <li><a href="/checklist.pdf">Checklist</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#signup" class="nav-cta">Get Free Alerts</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
 </nav>
 
-<!-- Ticker -->
-<div class="ticker-wrap">
-  <div class="ticker">
-    <span>$3.4 BILLION STOLEN FROM ADULTS 60+ IN 2023</span>
-    <span>MEDICARE CALLBACK SCAM ACTIVE THIS WEEK</span>
-    <span>GRANDPARENT VOICE-CLONE SCAM ON THE RISE</span>
-    <span>GIFT CARD DRAIN SCAM — KNOW THE SCRIPT</span>
-    <span>IRS IMPERSONATION CALLS SPIKING NATIONWIDE</span>
-    <span>$3.4 BILLION STOLEN FROM ADULTS 60+ IN 2023</span>
-    <span>MEDICARE CALLBACK SCAM ACTIVE THIS WEEK</span>
-    <span>GRANDPARENT VOICE-CLONE SCAM ON THE RISE</span>
-    <span>GIFT CARD DRAIN SCAM — KNOW THE SCRIPT</span>
-    <span>IRS IMPERSONATION CALLS SPIKING NATIONWIDE</span>
+<!-- ── Hero ── -->
+<section class="hero" id="signup">
+  <div class="hero-badge">🛡️ Free weekly fraud alerts</div>
+  <h1>Protect the people you love from scams</h1>
+  <p class="hero-sub">Every week, we break down the scams targeting your family — what they say, how they trick you, and exactly what to do. Backed by real FTC and FBI data.</p>
+  <form class="signup-form" onsubmit="event.preventDefault(); handleSignup('heroEmail', 'heroBtn', 'heroSuccess', 'heroError');">
+    <input type="email" id="heroEmail" placeholder="Your email address" required>
+    <button type="submit" id="heroBtn">Subscribe Free</button>
+  </form>
+  <p class="signup-note">Free forever. One email per week. Unsubscribe anytime.</p>
+  <div class="signup-success" id="heroSuccess">You're in! Check your inbox for a confirmation.</div>
+  <div class="signup-error" id="heroError"></div>
+</section>
+
+<!-- ── Trust bar ── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-icon">🏛️</span> Powered by FTC data</div>
+    <div class="trust-item"><span class="trust-icon">🔍</span> FBI IC3 alert tracking</div>
+    <div class="trust-item"><span class="trust-icon">✅</span> BBB scam reports</div>
+    <div class="trust-item"><span class="trust-icon">📧</span> Delivered weekly</div>
   </div>
 </div>
 
-<!-- Hero -->
-<section class="hero" id="signup">
-  <div class="hero-eyebrow">Free weekly fraud alert</div>
-  <h1 class="hero-headline">Someone you love<br>is being <em>targeted</em><br>right now.</h1>
-  <p class="hero-sub">
-    Every week, a new scam. Every week, thousands of older adults lose their savings to criminals who know exactly what to say.
-    <strong>We tell you exactly what's happening — and give you the words to protect the people who matter most to you.</strong>
-  </p>
-  <div class="signup-block">
-    <div class="signup-form">
-      <input type="email" id="heroEmail" placeholder="Your email address" autocomplete="email">
-      <button onclick="subscribe('heroEmail', 'heroSuccess', 'heroError', this)">PROTECT THEM</button>
+<!-- ── What You Get ── -->
+<div class="section-alt">
+<section class="section">
+  <div class="section-label">What You Get</div>
+  <h2 class="section-title">Everything you need to keep your family safe</h2>
+  <p class="section-subtitle">No jargon. No fear-mongering. Just clear, actionable alerts you can forward to your parents.</p>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon card-icon-blue">🚨</div>
+      <h3>Weekly scam deep-dives</h3>
+      <p>Each week we spotlight the #1 scam targeting older adults right now — what the caller says, what the text looks like, and how to shut it down.</p>
     </div>
-    <div class="signup-note">Free. Weekly. No spam. Unsubscribe any time.</div>
-    <div class="signup-success" id="heroSuccess">
-      ✓ You're in. Check your email for your free Scam Alert Checklist. First alert lands Wednesday.
+    <div class="card">
+      <div class="card-icon card-icon-amber">🛡️</div>
+      <h3>Prevention tips you can act on</h3>
+      <p>Real scripts you can say to your parents, specific settings to change, and exact steps to take. Not vague "be careful" advice.</p>
     </div>
-    <div class="signup-error" id="heroError"></div>
-  </div>
-</section>
-
-<!-- Why section -->
-<section class="why">
-  <div class="section-label">Why this exists</div>
-  <h2 class="why-headline reveal">THE SCAMMERS HAVE A SCRIPT.<br>NOW YOU DO TOO.</h2>
-  <div class="why-grid">
-    <div class="why-card reveal">
-      <div class="why-num">01</div>
-      <div class="why-title">The exact scam running this week</div>
-      <div class="why-body">Not a general warning. The specific script they're using. The caller ID they're spoofing. The exact words that make it convincing.</div>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-num">02</div>
-      <div class="why-title">What to say to the people you love</div>
-      <div class="why-body">Every issue includes a real script you can use in a real conversation with whoever needs it most — a parent, grandparent, aunt, uncle, neighbor. Not "be careful." Words that actually work.</div>
-    </div>
-    <div class="why-card reveal">
-      <div class="why-num">03</div>
-      <div class="why-title">The red flags to watch for</div>
-      <div class="why-body">Three specific phrases or tactics from this week's scam. Forward it to your parents. The knowledge alone is protection.</div>
+    <div class="card">
+      <div class="card-icon card-icon-blue">📚</div>
+      <h3>A growing scam encyclopedia</h3>
+      <p>Browse our library of every scam we've covered — from grandparent scams to AI voice cloning. Share specific pages with family members who need them.</p>
     </div>
   </div>
 </section>
+</div>
 
-<!-- Sample Issue -->
-<section class="sample">
-  <div class="sample-inner">
-    <div class="sample-label reveal">Sample issue</div>
-    <h2 class="sample-headline reveal">THIS IS WHAT LANDS<br>IN YOUR INBOX</h2>
-    <div class="email-preview reveal">
-      <div class="email-header">
-        <div class="email-brand">IS THIS A SCAM?</div>
-        <div class="email-tagline">A weekly fraud alert for anyone with aging parents · isthisascam.news</div>
+<!-- ── Scam Library Teaser ── -->
+<section class="section">
+  <div class="section-label">Scam Library</div>
+  <h2 class="section-title">Browse our scam encyclopedia</h2>
+  <p class="section-subtitle">Detailed breakdowns of every scam targeting your family. How they work, how to spot them, and what to do.</p>
+  <div class="scam-grid">
+    <a href="/scams/government-grant-scams" class="scam-card">
+      <div class="scam-card-icon">🏛️</div>
+      <h4>Government Grant Scams</h4>
+      <p>"You've been approved for a free grant" — then they ask for a processing fee.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/grandparent-scams" class="scam-card">
+      <div class="scam-card-icon">👵</div>
+      <h4>Grandparent Scams</h4>
+      <p>"Grandma, I'm in jail" — criminals impersonate grandchildren in distress.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/romance-scams" class="scam-card">
+      <div class="scam-card-icon">💔</div>
+      <h4>Romance Scams</h4>
+      <p>Fake online relationships designed to drain savings over months.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/tech-support-scams" class="scam-card">
+      <div class="scam-card-icon">🖥️</div>
+      <h4>Tech Support Scams</h4>
+      <p>"Your computer has a virus" — pop-ups that trick you into paying for fake fixes.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/medicare-scams" class="scam-card">
+      <div class="scam-card-icon">🏥</div>
+      <h4>Medicare Scams</h4>
+      <p>Fake Medicare reps calling to "verify" your information or offer free equipment.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/irs-ssa-impersonation" class="scam-card">
+      <div class="scam-card-icon">📋</div>
+      <h4>IRS &amp; SSA Impersonation</h4>
+      <p>"You owe back taxes" or "Your Social Security has been suspended."</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/ai-voice-cloning-scams" class="scam-card">
+      <div class="scam-card-icon">🤖</div>
+      <h4>AI Voice Cloning Scams</h4>
+      <p>Criminals clone a loved one's voice with AI to make emergency calls.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+    <a href="/scams/gift-card-scams" class="scam-card">
+      <div class="scam-card-icon">🎁</div>
+      <h4>Gift Card Scams</h4>
+      <p>"Buy gift cards and read me the numbers" — a hallmark of almost every scam.</p>
+      <span class="arrow">Learn more &rarr;</span>
+    </a>
+  </div>
+  <div class="scam-browse-all">
+    <a href="/scams/" class="btn-outline">Browse all 15 scam types &rarr;</a>
+  </div>
+</section>
+
+<!-- ── Resources ── -->
+<div class="section-alt">
+<section class="section" id="about">
+  <div class="section-label">Resources</div>
+  <h2 class="section-title">Tools to protect your family</h2>
+  <p class="section-subtitle">Download, share, and use these resources to help your parents stay safe.</p>
+  <div class="resources-grid">
+    <a href="/checklist.pdf" class="resource-card">
+      <span class="resource-icon">📋</span>
+      <div>
+        <h4>Scam Prevention Checklist</h4>
+        <p>Print-friendly PDF your parents can keep by the phone. Covers the top 5 warning signs.</p>
       </div>
-      <div class="email-section">
-        <div class="email-section-label">🚨 Scam of the Week</div>
-        <h3>The Medicare Callback Scam</h3>
-        <p>The call comes in showing a real Medicare number. The caller says your parent's benefits will be suspended unless they call back immediately. When they call, they're told to verify their identity — with a gift card. Median loss: $1,400. Over 40,000 reports filed last quarter alone.</p>
+    </a>
+    <a href="/scams/" class="resource-card">
+      <span class="resource-icon">📚</span>
+      <div>
+        <h4>Scam Encyclopedia</h4>
+        <p>Detailed breakdowns of every scam type — how they work, red flags, and what to do.</p>
       </div>
-      <div class="email-section">
-        <div class="email-section-label">⚡ Quick Alerts</div>
-        <div class="email-alert">
-          <strong>IRS Suspension Scam</strong> — "Your Social Security number has been suspended due to suspicious activity. Press 1 to speak with an agent."
-        </div>
-        <div class="email-alert">
-          <strong>Grandparent Voice-Clone Scam</strong> — AI now fakes your kid's voice. "Grandma, I'm in jail. Please don't tell Mom. I need $2,000 in gift cards."
-        </div>
+    </a>
+    <a href="#bottom-signup" class="resource-card">
+      <span class="resource-icon">📩</span>
+      <div>
+        <h4>Share with your family</h4>
+        <p>Forward this page to a sibling, spouse, or friend. The more people who know, the safer everyone is.</p>
       </div>
-      <div class="email-section">
-        <div class="email-section-label">💬 What to tell your parents</div>
-        <p><em>"If anyone calls from Medicare and asks you to call back — don't. Hang up and call me first. Medicare never calls asking for gift cards, ever."</em></p>
-      </div>
-    </div>
+    </a>
   </div>
 </section>
+</div>
 
-<!-- Stats -->
-<section class="stats">
-  <div class="stats-grid">
-    <div class="reveal">
-      <div class="stat-num">$3.4B</div>
-      <div class="stat-label">Stolen from adults 60+ in 2023. That's up 11% from the year before. — FBI IC3</div>
-    </div>
-    <div class="reveal">
-      <div class="stat-num">100K+</div>
-      <div class="stat-label">Fraud complaints filed by older adults in 2023. Most never reported. — FTC</div>
-    </div>
-    <div class="reveal">
-      <div class="stat-num">$33K</div>
-      <div class="stat-label">Average loss per elder fraud victim. Money most can't afford to lose. — NCOA</div>
-    </div>
-  </div>
+<!-- ── Bottom CTA ── -->
+<section class="bottom-cta" id="bottom-signup">
+  <h2>Stay one step ahead of scammers</h2>
+  <p>Free. Weekly. No spam ever. Just the scam alerts your family needs.</p>
+  <form class="signup-form" onsubmit="event.preventDefault(); handleSignup('bottomEmail', 'bottomBtn', 'bottomSuccess', 'bottomError');">
+    <input type="email" id="bottomEmail" placeholder="Your email address" required>
+    <button type="submit" id="bottomBtn">Subscribe Free</button>
+  </form>
+  <p class="signup-note">Join families across the country who read Is This a Scam? every week.</p>
+  <div class="signup-success" id="bottomSuccess">You're in! Check your inbox for a confirmation.</div>
+  <div class="signup-error" id="bottomError"></div>
 </section>
 
-<!-- Final CTA -->
-<section style="padding:60px 40px;border-top:1px solid #1a1a1a;text-align:center;">
-  <a href="/scams/" style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px;color:#f5f0e8;text-decoration:none;border-bottom:2px solid #d42b2b;padding-bottom:4px;">
-    BROWSE THE SCAM LIBRARY →
-  </a>
-  <p style="margin-top:12px;font-size:13px;color:#555;font-family:'DM Sans',sans-serif;">Deep-dive breakdowns of every scam we've covered. Growing every week.</p>
-</section>
-
-<section class="final-cta">
-  <div class="final-cta-inner">
-    <h2 class="final-headline">ONE EMAIL.<br>EVERY WEDNESDAY.</h2>
-    <p class="final-sub">Free. 3 minutes to read. Could save thousands.</p>
-    <div class="final-form">
-      <input type="email" id="finalEmail" placeholder="Your email address" autocomplete="email">
-      <button onclick="subscribe('finalEmail', 'finalSuccess', 'finalError', this)">JOIN FREE</button>
-    </div>
-    <div class="final-note">No ads. No spam. Unsubscribe any time.</div>
-    <div class="signup-success" id="finalSuccess" style="max-width:440px;margin:16px auto 0;">
-      ✓ You're in. Check your email for your free Scam Alert Checklist. First alert lands Wednesday.
-    </div>
-    <div class="signup-error" id="finalError"></div>
-  </div>
-</section>
-
+<!-- ── Footer ── -->
 <footer>
-  <div class="footer-logo">IS THIS A <span>SCAM?</span></div>
-  <div>Weekly fraud alerts for people who give a damn · isthisascam.news</div>
-  <div>© 2026 · Free forever</div>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🛡️ Is This a Scam?</div>
+      <p class="footer-tagline">A free weekly fraud alert for anyone who wants to protect the people they love from scams.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="/">Home</a>
+        <a href="/scams/">Scam Library</a>
+        <a href="#signup">Newsletter</a>
+        <a href="/checklist.pdf">Checklist</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">Report Fraud (FTC)</a>
+        <a href="https://www.ic3.gov" target="_blank" rel="noopener">FBI IC3</a>
+        <a href="https://www.identitytheft.gov" target="_blank" rel="noopener">IdentityTheft.gov</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 isthisascam.news &middot; Not affiliated with any government agency. &middot; Built to protect families.
+  </div>
 </footer>
 
 <script>
-  // ── Signup ────────────────────────────────────────────────────────────────
-  async function subscribe(inputId, successId, errorId, btn) {
+  async function handleSignup(inputId, btnId, successId, errorId) {
     const email = document.getElementById(inputId).value.trim();
+    const btn = document.getElementById(btnId);
     const successEl = document.getElementById(successId);
     const errorEl = document.getElementById(errorId);
 
@@ -750,7 +779,7 @@
 
     btn.disabled = true;
     const orig = btn.textContent;
-    btn.textContent = 'SENDING...';
+    btn.textContent = 'Sending...';
 
     try {
       const res = await fetch('https://signup.isthisascam.news/subscribe', {
@@ -762,7 +791,7 @@
       if (res.ok) {
         successEl.style.display = 'block';
         document.getElementById(inputId).value = '';
-        btn.textContent = '✓ DONE';
+        btn.textContent = 'Subscribed!';
       } else {
         throw new Error('Signup failed');
       }
@@ -774,27 +803,14 @@
     }
   }
 
-  // Allow Enter key in inputs
   document.querySelectorAll('input[type="email"]').forEach(input => {
     input.addEventListener('keydown', e => {
       if (e.key === 'Enter') {
-        const btn = input.nextElementSibling;
-        if (btn) btn.click();
+        e.preventDefault();
+        input.closest('form').querySelector('button').click();
       }
     });
   });
-
-  // ── Scroll reveal ─────────────────────────────────────────────────────────
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+{
+  "title": "Government Grant Scams",
+  "meta_description": "Learn about Government Grant Scams, how they work, and protect your loved ones from fraud. Real stats and expert advice.",
+  "overview": "Government grant scams often claim that the victim is entitled to a significant amount of money from the government but needs to pay an upfront fee or provide personal information first. According to the Federal Trade Commission (FTC), in 2021, victims lost over $5 million in these types of schemes. The perpetrators prey on people's hopes for financial relief and often target older adults who may be less familiar with online scams.",
+  "how_it_works": [
+    "Step 1: Scammers contact the victim by phone or email, claiming to represent a government agency offering grants.",
+    "Step 2: They create urgency by saying that funds are limited and will run out quickly unless immediate action is taken.",
+    "Step 3: The scammer asks for personal information such as Social Security numbers or banking details under the guise of processing the grant.",
+    "Step 4: Once they have the information, scammers use it to commit identity theft or drain bank accounts."
+  ],
+  "examples": [
+    "Mary received an email claiming she was eligible for a $50,000 government grant but needed to pay a small fee of $200 first. She paid via wire transfer and never heard back.",
+    "John got a phone call from someone saying he could claim his share of stimulus funds but had to provide banking details over the phone."
+  ],
+  "red_flags": [
+    "Requests for money upfront to process a grant",
+    "Urgent or threatening language about missing out on benefits",
+    "Asking for personal information such as Social Security numbers or bank account details",
+    "Communication through email or social media instead of official government channels",
+    "Promises of large sums of money with little effort required"
+  ],
+  "what_to_do": [
+    "Contact the local office of the government agency mentioned to verify the claim",
+    "Report any suspicious activity to the FTC at IdentityTheft.gov",
+    "Do not provide personal or financial information unless you initiated contact",
+    "Share this information with family and friends who may be vulnerable"
+  ],
+  "entry_points": [
+    "Emails from fake government agencies",
+    "Phone calls claiming urgent action is needed",
+    "Social media messages directing victims to websites asking for personal details"
+  ],
+  "related_scams": [
+    "stimulus-check-scams",
+    "social-security-benefits-fraud",
+    "investment-scam-alerts"
+  ]
+}

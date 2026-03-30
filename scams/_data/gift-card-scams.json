@@ -1,0 +1,38 @@
+{
+  "title": "Gift Card Scams",
+  "meta_description": "Learn how to protect your aging parents from the dangers of gift card scams. Real statistics and prevention tips.",
+  "overview": "Gift card scams are a prevalent form of fraud where scammers trick victims into purchasing and handing over gift cards, thereby transferring money directly to them. According to the Federal Trade Commission (FTC), consumers reported losing nearly $200 million in such scams between January 2020 and September 2021. These scams are particularly dangerous because once a gift card is redeemed, there's no way to reverse the transaction or get your money back. Scammers often use fear tactics, urgency, and impersonation of legitimate organizations like government agencies, law enforcement, or utility companies to convince their targets.",
+  "how_it_works": [
+    "Step 1: The scammer contacts the victim through a phone call, text message, email, or social media platform, claiming to be from an official entity such as the IRS, FBI, or a power company.",
+    "Step 2: The scammer creates a sense of urgency by threatening arrest, utility disconnection, or other dire consequences unless immediate action is taken.",
+    "Step 3: They instruct the victim to purchase specific gift cards (like Walmart, Target, or iTunes) and provide the card numbers over the phone.",
+    "Step 4: The scammer then uses these card numbers to redeem the money, leaving the victim with no recourse."
+  ],
+  "examples": [
+    "Mary received a call from someone claiming to be an IRS agent who said she owed back taxes. To avoid arrest, she was told to buy several Walmart gift cards and read off the codes over the phone.",
+    "John got an email from what appeared to be his power company stating that he had missed payments and if he didn\u2019t resolve it immediately by purchasing iTunes gift cards, his electricity would be disconnected."
+  ],
+  "red_flags": [
+    "A caller requests immediate payment using a gift card or demands you purchase specific types of gift cards.",
+    "The caller threatens arrest or legal action if the requested payment is not made immediately.",
+    "You are told to keep your interaction with the sender secret from family, friends, or financial advisors.",
+    "They pressure you to act quickly without time for research or consulting others.",
+    "You notice misspellings or grammatical errors in emails that claim to be from official organizations."
+  ],
+  "what_to_do": [
+    "Hang up immediately if someone demands a gift card payment and report the incident to the FTC at IdentityTheft.gov/report-identity-theft.",
+    "Do not engage with texts, calls, or emails that threaten legal action unless you can independently verify their legitimacy through official channels.",
+    "Educate your loved ones about these scams and encourage them to discuss any such requests with family members before taking action.",
+    "Consider setting up alerts on bank statements for unusual transactions and monitor financial accounts regularly."
+  ],
+  "entry_points": [
+    "Phone calls from unknown numbers",
+    "Text messages or emails impersonating official entities",
+    "Social media platforms like Facebook Messenger"
+  ],
+  "related_scams": [
+    "imposter-scams",
+    "tech-support-fraud",
+    "grandparent-scam"
+  ]
+}

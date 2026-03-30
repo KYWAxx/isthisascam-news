@@ -1,0 +1,38 @@
+{
+  "title": "SIM Swapping",
+  "meta_description": "Protect your parents from SIM swapping scams: understand how it works, recognize red flags, and take action to stay safe.",
+  "overview": "SIM swapping is a sophisticated scam where fraudsters hijack someone's mobile phone number by taking control of their SIM card. They achieve this by convincing the victim\u2019s telecom provider that they are the legitimate owner. Once in possession of the phone number, scammers can access bank accounts, steal identities, and conduct fraudulent transactions. According to the Federal Trade Commission (FTC), SIM swapping scams have been reported in increasing numbers, with over 30% of victims experiencing financial loss. The Better Business Bureau (BBB) has also noted a significant rise in complaints, highlighting the need for heightened vigilance among consumers.",
+  "how_it_works": [
+    "Step 1: Scammers gather personal information about their target through various means like social media or data breaches.",
+    "Step 2: They contact the victim's mobile carrier and pose as the legitimate account holder to request a SIM card replacement.",
+    "Step 3: Once the scammers have control of the new SIM, they receive all calls, texts, and two-factor authentication codes meant for the original owner.",
+    "Step 4: Using this access, they can reset passwords or gain entry into various online accounts linked with that phone number."
+  ],
+  "examples": [
+    "Alice noticed her phone was not receiving any messages but received a notification on an app about a password reset. She called her carrier and learned someone had requested a SIM swap using stolen personal information.",
+    "Bob got a call from his bank asking to verify recent transactions he didn't make. Upon investigation, it turned out that scammers used SIM swapping to access his banking account through text-based two-factor authentication."
+  ],
+  "red_flags": [
+    "Unexpected notifications about a password reset or other security changes in your accounts.",
+    "Failure to receive expected SMS messages or calls.",
+    "A sudden inability to log into any account linked with the phone number.",
+    "Unusual activity on social media accounts, such as posts you didn't make.",
+    "Receiving confirmation codes for services you haven\u2019t recently accessed."
+  ],
+  "what_to_do": [
+    "Contact your mobile carrier immediately if you suspect SIM swapping and request to lock your account.",
+    "Enable two-factor authentication (2FA) on all accounts but use an authenticator app instead of text-based 2FA whenever possible.",
+    "Regularly check financial statements for any unauthorized transactions.",
+    "Educate yourself about the latest security measures and stay informed about emerging scams."
+  ],
+  "entry_points": [
+    "Social media profiles where scammers gather personal details like birth dates or addresses.",
+    "Data breaches that expose sensitive information which can be used to impersonate victims.",
+    "Phishing emails or calls pretending to be from service providers asking for personal information."
+  ],
+  "related_scams": [
+    "account-takeover",
+    "phishing-schemes",
+    "identity-theft"
+  ]
+}

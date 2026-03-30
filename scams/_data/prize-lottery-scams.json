@@ -1,0 +1,38 @@
+{
+  "title": "Prize & Lottery Scams",
+  "meta_description": "Learn how to protect your aging parents from prize and lottery scams, a common fraud targeting seniors.",
+  "overview": "Prize and lottery scams are fraudulent schemes where scammers convince victims they've won a large sum of money or an extravagant prize. However, the catch is that victims must pay a fee or provide personal information before claiming their winnings. According to the Federal Trade Commission (FTC), older Americans lose millions each year to these types of scams. The FBI's Internet Crime Complaint Center (IC3) reported over 7,000 complaints in 2021 alone, with losses exceeding $65 million. These scams can devastate a victim\u2019s financial security and erode their trust in others.",
+  "how_it_works": [
+    "Step 1: Scammers contact victims through phone calls or emails claiming they've won a lottery or prize draw.",
+    "Step 2: The scammers request personal information such as social security numbers, bank account details, or identification documents to verify the winner's identity.",
+    "Step 3: They demand an upfront fee for taxes, processing charges, shipping costs, or insurance on the winnings before releasing the prize or money.",
+    "Step 4: Once the victim pays these fees, they receive nothing but a confirmation that their payment is being processed, leading them to believe they are still in line to win."
+  ],
+  "examples": [
+    "Evelyn received an email stating she won $1 million from a lottery, even though she never entered. The sender requested her bank details for tax and insurance fees before sending the winnings.",
+    "David got a phone call telling him he was selected as one of five winners to receive a luxury car valued at $50,000. To claim his prize, David needed to wire money for shipping costs."
+  ],
+  "red_flags": [
+    "Unsolicited contact claiming you've won something.",
+    "Requests for upfront fees or taxes before receiving winnings.",
+    "Pressure to act quickly to claim the prize.",
+    "Requests for personal information like social security numbers or bank details.",
+    "Promises of large sums of money from lotteries or contests not entered."
+  ],
+  "what_to_do": [
+    "Contact a local consumer protection agency if you suspect a scam.",
+    "Notify your financial institution to monitor for any fraudulent activity on accounts.",
+    "Report the incident to the FTC at IdentityTheft.gov and the FBI's IC3 website.",
+    "Educate yourself and loved ones about common scams through resources like BBB.org."
+  ],
+  "entry_points": [
+    "Emails purporting to be from lotteries or prize agencies.",
+    "Phone calls with automated messages claiming a prize has been won.",
+    "Text messages directing recipients to fake websites for more information."
+  ],
+  "related_scams": [
+    "investment-scam",
+    "romance-scam",
+    "tech-support-fraud"
+  ]
+}

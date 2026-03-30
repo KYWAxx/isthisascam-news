@@ -1,0 +1,38 @@
+{
+  "title": "Charity Scams",
+  "meta_description": "Learn about charity scams targeting seniors, including how they work and how to protect your loved ones.",
+  "overview": "Charity scams are fraudulent schemes where scammers pose as representatives of legitimate charities to solicit donations from unsuspecting victims. According to the Federal Trade Commission (FTC), in 2021 alone, over $16 million was lost by individuals who fell victim to charity scams. These scams exploit people's generosity, especially during times of crisis or natural disasters when sympathy is high. Scammers often use emotional appeals and urgent requests for donations to pressure victims into giving money quickly.",
+  "how_it_works": [
+    "Step 1: The scammer identifies a charitable cause that resonates with potential donors, such as disaster relief efforts or support for underprivileged children.",
+    "Step 2: They contact the victim through phone calls, emails, text messages, or social media posing as a representative from a well-known charity.",
+    "Step 3: Using emotional appeals and urgent requests, they convince the victim to donate immediately by providing credit card information or sending money via wire transfer services like Western Union.",
+    "Step 4: Once the scammer receives the donation, they disappear with the funds without ever providing any assistance to those in need."
+  ],
+  "examples": [
+    "John received a phone call from someone claiming to be raising funds for hurricane relief. The caller said his contribution was urgently needed and would go directly to help victims recover their homes. Feeling compelled by the urgency, John donated $500 via credit card, only to find out later that the charity did not exist.",
+    "Mary got an email from a group purporting to support veterans with medical expenses. The email included a link to donate online. After clicking through and entering her bank details on what she thought was a secure page, Mary noticed unauthorized charges on her account shortly after."
+  ],
+  "red_flags": [
+    "Requests for immediate payment or donations without providing detailed information about how the funds will be used.",
+    "Pressure tactics such as threats of legal action if you do not donate promptly.",
+    "Lack of contact details or vague descriptions of the charity\u2019s mission and activities.",
+    "Spelling errors, poor grammar, or generic greetings in communication (e.g., 'Dear Friend')",
+    "Demand for donations through unusual payment methods like gift cards or wire transfers"
+  ],
+  "what_to_do": [
+    "Verify the legitimacy of any charity by checking its registration status with your state's attorney general\u2019s office or using websites like Charity Navigator.",
+    "Do not give out personal information over the phone, especially financial details.",
+    "Ask for more information about how donations will be used and request written documentation before making a contribution.",
+    "Report suspected scams to the FTC at ReportFraud.FTC.gov."
+  ],
+  "entry_points": [
+    "Phone calls: Scammers may use automated dialing systems or cold call lists to contact potential donors.",
+    "Emails: Phishing emails can contain links leading to fake donation websites designed to steal personal information.",
+    "Social Media: Fraudsters may create fake profiles impersonating real charities and post requests for donations."
+  ],
+  "related_scams": [
+    "emergency-fraud",
+    "identity-theft",
+    "investment-scam"
+  ]
+}

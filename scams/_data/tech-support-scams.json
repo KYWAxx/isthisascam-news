@@ -1,0 +1,38 @@
+{
+  "title": "Tech Support Scams",
+  "meta_description": "Protect your parents from tech support scams. Learn the warning signs and how to stay safe.",
+  "overview": "Tech support scams are fraudulent schemes where scammers pose as legitimate technical support personnel, often claiming to be from well-known companies like Microsoft or Apple. They convince victims that their computers have critical issues or malware infections and demand money for services they don't need. According to the Federal Trade Commission (FTC), tech support scams cost consumers over $105 million in 2021 alone. These scams are particularly dangerous because they can lead not only to financial loss but also to significant data breaches, putting sensitive personal information at risk.",
+  "how_it_works": [
+    "Step 1: Scammers contact the victim through a pop-up ad or unsolicited phone call, claiming there's an urgent problem with their computer.",
+    "Step 2: They ask for remote access to the victim\u2019s device and may install software that allows them full control over the system.",
+    "Step 3: The scammer then identifies non-existent problems, such as malware or system errors, which need immediate repair.",
+    "Step 4: To fix these fake issues, they demand payment, often via gift cards, wire transfers, or direct bank payments."
+  ],
+  "examples": [
+    "John received a phone call from someone claiming to be from Microsoft technical support. They said his computer had viruses and needed immediate cleaning for $300. John paid over the phone only to find out later that his device was perfectly fine.",
+    "Maria got an email with a link to what looked like her antivirus software indicating she had critical security issues. After clicking, a call center operator took control of her system and demanded $500 to fix non-existent problems."
+  ],
+  "red_flags": [
+    "Unexpected contact from tech support via phone or pop-up ads",
+    "Demands for remote access to your computer to 'fix' issues",
+    "Requests for payment in unusual forms like gift cards",
+    "Pressure to act quickly before a 'serious problem' worsens",
+    "Claims that you have won a prize but need to pay fees first"
+  ],
+  "what_to_do": [
+    "Hang up and independently verify the company\u2019s contact information if contacted by phone.",
+    "Never grant remote access to your device from unknown sources.",
+    "Install legitimate security software from known, trusted providers.",
+    "Report any suspicious activity to the FTC at IdentityTheft.gov."
+  ],
+  "entry_points": [
+    "Pop-up ads on websites that claim your computer is infected",
+    "Unsolicited phone calls posing as tech support",
+    "Emails with links to fake security software"
+  ],
+  "related_scams": [
+    "tech-support-scammers-target-elderly",
+    "how-to-spot-and-prevent-tech-support-fraud",
+    "the-rise-of-gift-card-scams-in-2023"
+  ]
+}
