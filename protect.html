@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Protect Yourself from Scams | Is This a Scam?</title>
+<meta name="description" content="8 practical steps to protect yourself and your family from scams. Credit freezes, two-factor auth, the family code word trick, and more.">
+<meta property="og:title" content="How to Protect Yourself from Scams | Is This a Scam?">
+<meta property="og:description" content="8 practical steps to protect your family before scammers strike. Free guide from isthisascam.news.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://isthisascam.news/protect">
+<meta property="og:image" content="https://isthisascam.news/og-image.png">
+<meta property="og:site_name" content="Is This a Scam?">
+<link rel="canonical" href="https://isthisascam.news/protect">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A; --blue: #2563EB; --blue-light: #EFF6FF;
+    --amber: #D97706; --amber-light: #FEF3C7;
+    --bg: #F8F9FA; --white: #FFFFFF; --text: #1B2A4A;
+    --text-secondary: #4B5563; --border: #E5E7EB;
+    --serif: 'Merriweather', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; }
+
+  /* Nav */
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
+  .nav-shield { font-size: 24px; } .nav-name { font-family: var(--serif); font-size: 18px; font-weight: 900; }
+  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+  .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--blue); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-weight: 600 !important; }
+  .nav-hamburger { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+
+  /* Header */
+  .page-header { background: var(--white); padding: 60px 40px 48px; border-bottom: 1px solid var(--border); }
+  .page-header-inner { max-width: 780px; margin: 0 auto; }
+  .page-label { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--blue); margin-bottom: 12px; }
+  .page-header h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 42px); font-weight: 900; color: var(--navy); margin-bottom: 12px; line-height: 1.2; }
+  .page-header p { font-size: 17px; color: var(--text-secondary); max-width: 600px; line-height: 1.7; }
+
+  /* TOC */
+  .toc { max-width: 780px; margin: 0 auto; padding: 32px 40px; }
+  .toc-label { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #9CA3AF; margin-bottom: 16px; }
+  .toc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .toc-item { display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
+  .toc-item:hover { border-color: var(--blue); }
+  .toc-icon { font-size: 20px; }
+
+  /* Sections */
+  .protect-content { max-width: 780px; margin: 0 auto; padding: 0 40px 80px; }
+
+  .protect-section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  .protect-section:last-child { border-bottom: none; }
+
+  .ps-icon { font-size: 40px; margin-bottom: 16px; }
+
+  .protect-section h2 { font-family: var(--serif); font-size: 26px; font-weight: 900; color: var(--navy); margin-bottom: 8px; line-height: 1.3; }
+
+  .ps-intro { font-size: 15px; color: var(--blue); font-weight: 600; margin-bottom: 20px; }
+
+  .protect-section p { color: var(--text-secondary); margin-bottom: 16px; font-size: 16px; line-height: 1.8; }
+
+  .callout { background: var(--blue-light); border-left: 4px solid var(--blue); padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+  .callout p { color: var(--text); margin: 0; font-size: 15px; }
+  .callout strong { color: var(--navy); }
+
+  .callout-amber { background: var(--amber-light); border-left-color: var(--amber); }
+
+  .steps { list-style: none; margin: 20px 0; }
+  .steps li { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+  .steps li:last-child { border-bottom: none; }
+  .step-n { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+
+  .link-card { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--blue); font-size: 14px; font-weight: 600; margin: 4px 4px 4px 0; transition: border-color 0.2s; }
+  .link-card:hover { border-color: var(--blue); }
+
+  /* CTA */
+  .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
+  .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
+  .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
+  .cta-form { display: flex; gap: 12px; max-width: 420px; margin: 0 auto; }
+  .cta-form input { flex: 1; padding: 12px 18px; border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white); font-family: var(--sans); font-size: 14px; outline: none; }
+  .cta-form input::placeholder { color: rgba(255,255,255,0.4); }
+  .cta-form input:focus { border-color: var(--blue); }
+  .cta-form button { padding: 12px 24px; background: var(--blue); color: var(--white); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-family: var(--sans); white-space: nowrap; }
+  .cta-success { display: none; color: #34D399; font-weight: 600; margin-top: 12px; }
+  .cta-error { display: none; color: #FCA5A5; font-size: 14px; margin-top: 8px; }
+
+  footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; font-size: 13px; color: #9CA3AF; }
+  footer a { color: var(--blue); text-decoration: none; }
+
+  @media (max-width: 768px) {
+    .nav { padding: 14px 20px; } .nav-links { display: none; } .nav-hamburger { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; border-bottom: 1px solid var(--border); gap: 16px; }
+    .page-header { padding: 40px 20px 32px; }
+    .toc { padding: 24px 20px; } .toc-grid { grid-template-columns: 1fr; }
+    .protect-content { padding: 0 20px 60px; }
+    .cta-form { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
+    <li><a href="/scams/">Scam Library</a></li>
+    <li><a href="/protect">Protect Yourself</a></li>
+    <li><a href="/checklist.pdf">Checklist</a></li>
+    <li><a href="/#signup" class="nav-cta">Get Free Alerts</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="page-label">Protection Guide</div>
+    <h1>How to protect yourself before scammers strike</h1>
+    <p>8 practical steps you can take today to protect yourself and your family. No products to buy. No services to sign up for. Just smart, free precautions.</p>
+  </div>
+</header>
+
+<div class="toc">
+  <div class="toc-label">Jump to a section</div>
+  <div class="toc-grid">
+    <a href="#lock-down-accounts" class="toc-item"><span class="toc-icon">🔐</span> Lock Down Your Accounts</a>
+    <a href="#strong-passwords" class="toc-item"><span class="toc-icon">🔑</span> Strong, Unique Passwords</a>
+    <a href="#freeze-credit" class="toc-item"><span class="toc-icon">❄️</span> Freeze Your Credit</a>
+    <a href="#bank-alerts" class="toc-item"><span class="toc-icon">🔔</span> Set Up Bank Alerts</a>
+    <a href="#family-code-word" class="toc-item"><span class="toc-icon">🤝</span> The Family Code Word</a>
+    <a href="#phone-safety" class="toc-item"><span class="toc-icon">📱</span> Phone Safety</a>
+    <a href="#email-text-safety" class="toc-item"><span class="toc-icon">📧</span> Email &amp; Text Safety</a>
+    <a href="#talk-to-parents" class="toc-item"><span class="toc-icon">💬</span> What to Tell Your Parents</a>
+  </div>
+</div>
+
+<div class="protect-content">
+
+  <!-- 1. Lock Down Your Accounts -->
+  <div class="protect-section" id="lock-down-accounts">
+    <div class="ps-icon">🔐</div>
+    <h2>Lock Down Your Accounts</h2>
+    <p class="ps-intro">Adding an extra layer of security to your accounts can prevent scammers from getting in, even if they have your password.</p>
+
+    <p>Imagine your front door has one lock. A determined burglar might pick it. Now imagine it has two locks, and the second one changes every 30 seconds. That's essentially what two-factor authentication (2FA) does for your online accounts. After you enter your password, your bank or email provider sends a one-time code to your phone. You type in that code, and only then do you get access.</p>
+
+    <p>Why does this matter? Because passwords get stolen all the time — through data breaches, phishing emails, or even someone looking over your shoulder. But if a scammer has your password and doesn't have your phone, they still can't get in. That second code stops them cold.</p>
+
+    <p>Most banks, email providers, and social media sites offer 2FA. To turn it on, log into your account and look for "Security" or "Two-Factor Authentication" in the settings. The site will walk you through it — usually you just need to add your phone number. The whole process takes about 2 minutes per account.</p>
+
+    <div class="callout">
+      <p><strong>Start with these three:</strong> Turn on 2FA for your email account first (this is the master key to everything else), then your bank, then your social media. Those three cover the most damage a scammer could do.</p>
+    </div>
+  </div>
+
+  <!-- 2. Strong Passwords -->
+  <div class="protect-section" id="strong-passwords">
+    <div class="ps-icon">🔑</div>
+    <h2>Use Strong, Unique Passwords</h2>
+    <p class="ps-intro">If you use the same password everywhere, one breach exposes everything.</p>
+
+    <p>Here's the problem: when a company gets hacked (and it happens constantly), the attackers get a list of email addresses and passwords. If you used that same password for your bank, your email, and your Amazon account, the attacker now has access to all three. This is the #1 way people get their accounts taken over — not through some sophisticated hack, but because they reused a password.</p>
+
+    <p>The solution is to use a different password for every account. But nobody can remember 50 different passwords, which is where a password manager comes in. Think of it as a secure digital notebook that remembers all your passwords for you. You only need to remember one master password — the password manager handles the rest. It can even generate strong, random passwords that are nearly impossible to crack.</p>
+
+    <p>If setting one up feels overwhelming, ask a tech-savvy family member, grandchild, or friend to help. It takes about 30 minutes to set up, and once it's running, it actually makes your life easier — no more "forgot password" headaches.</p>
+
+    <div class="callout">
+      <p><strong>In the meantime:</strong> If you're not ready for a password manager yet, at the very least make sure your email password and your bank password are different from each other and different from everything else. Those two accounts are the most critical.</p>
+    </div>
+  </div>
+
+  <!-- 3. Freeze Your Credit -->
+  <div class="protect-section" id="freeze-credit">
+    <div class="ps-icon">❄️</div>
+    <h2>Freeze Your Credit (It's Free)</h2>
+    <p class="ps-intro">A credit freeze is one of the most powerful protections against identity theft, and it costs nothing.</p>
+
+    <p>A credit freeze prevents anyone — including scammers — from opening new credit cards, loans, or accounts in your name. When your credit is frozen, lenders can't pull your credit report, which means a scammer who has your Social Security number still can't open a credit card as you. It's like putting a padlock on your financial identity.</p>
+
+    <p>Important facts: freezing your credit is completely free (it's the law), it does not affect your credit score, and you can still use your existing credit cards and bank accounts normally. The only time you need to temporarily "thaw" it is when you're applying for new credit yourself — and that takes about 10 minutes.</p>
+
+    <p>You need to freeze your credit at all three major bureaus. Each one takes about 5 minutes online:</p>
+
+    <div style="margin: 16px 0;">
+      <a href="https://www.equifax.com/personal/credit-report-services/" target="_blank" rel="noopener" class="link-card">❄️ Equifax &mdash; Freeze here</a>
+      <a href="https://www.experian.com/freeze/" target="_blank" rel="noopener" class="link-card">❄️ Experian &mdash; Freeze here</a>
+      <a href="https://www.transunion.com/credit-freeze" target="_blank" rel="noopener" class="link-card">❄️ TransUnion &mdash; Freeze here</a>
+    </div>
+
+    <div class="callout callout-amber">
+      <p><strong>Do this for your parents too.</strong> If your parent is over 60 and not actively applying for new credit, there is almost no reason not to freeze their credit at all three bureaus. It takes 15 minutes total and could save them from catastrophic identity theft.</p>
+    </div>
+  </div>
+
+  <!-- 4. Bank Alerts -->
+  <div class="protect-section" id="bank-alerts">
+    <div class="ps-icon">🔔</div>
+    <h2>Set Up Bank Alerts</h2>
+    <p class="ps-intro">If a scammer uses your card, you want to know in seconds — not when you check your statement next month.</p>
+
+    <p>Most banks and credit card companies let you set up instant notifications that ping your phone every time your card is used. This means if someone charges $500 to your card at 2 AM, you know about it at 2 AM — not 30 days later when your statement arrives. Early detection is the difference between a quick phone call to your bank and months of fraud recovery.</p>
+
+    <p>Open your bank's app or website and look for "Notifications," "Alerts," or "Security Settings." Turn on alerts for all transactions, or at minimum for transactions above a certain amount (like $25 or $50). Most banks also let you set alerts for international transactions, online purchases, or when your balance drops below a certain level.</p>
+
+    <div class="callout">
+      <p><strong>Help your parent set this up.</strong> Next time you're visiting, sit down with them for 5 minutes and turn on transaction alerts on their phone. Show them what the notification looks like so they know what to do if they see one they don't recognize — call the number on the back of the card (never the number in the alert).</p>
+    </div>
+  </div>
+
+  <!-- 5. Family Code Word -->
+  <div class="protect-section" id="family-code-word">
+    <div class="ps-icon">🤝</div>
+    <h2>The Family Code Word Trick</h2>
+    <p class="ps-intro">This single trick defeats grandparent scams, AI voice cloning, and virtual kidnapping — all at once.</p>
+
+    <p>Pick a secret code word that only your immediate family knows. It should be something easy to remember but impossible to guess from social media — not your dog's name, not your street, not your anniversary. Something random, like "purple telescope" or "mango spaceship."</p>
+
+    <p>Here's how it works: if someone calls claiming to be a family member and says they're in an emergency — "I'm in jail, I need bail money" or "I've been in an accident, send money now" — the person who received the call asks: "What's our family code word?" A real family member will know it immediately. A scammer won't, no matter how convincing they sound.</p>
+
+    <p>This is especially important now that AI can clone a person's voice from just a few seconds of audio taken from social media. A scammer can literally sound like your grandson. But they can't know a code word that was never posted online.</p>
+
+    <div class="callout callout-amber">
+      <p><strong>Set this up today.</strong> Call your parents, siblings, and adult children. Pick a code word together. Make sure everyone remembers it. Tell them: "If anyone ever calls you in a panic asking for money, ask for the code word first. No code word, no money. No exceptions."</p>
+    </div>
+  </div>
+
+  <!-- 6. Phone Safety -->
+  <div class="protect-section" id="phone-safety">
+    <div class="ps-icon">📱</div>
+    <h2>Phone Safety</h2>
+    <p class="ps-intro">Most scams start with a phone call. Making a few changes to how you handle calls can block the majority of them.</p>
+
+    <p>The simplest rule: if you don't recognize the number, don't answer. Legitimate callers leave voicemails. Scammers almost never do — and if they do, you can listen to the voicemail and decide whether to call back using a number you look up yourself (never the number they left).</p>
+
+    <p>Both iPhones and Android phones have built-in features that automatically silence calls from unknown numbers. On iPhone, go to Settings, then Phone, then turn on "Silence Unknown Callers." On most Android phones, go to Settings, then Sound, then Caller ID and spam. Unknown callers will go straight to voicemail without your phone ever ringing.</p>
+
+    <p>You can also register your phone number at the National Do Not Call Registry at donotcall.gov. This won't stop scammers (they don't follow the law), but it will reduce legitimate telemarketing calls, which makes it easier to identify the scam calls that remain.</p>
+
+    <div class="callout">
+      <p><strong>If you accidentally answer:</strong> Hang up immediately. Don't press any buttons — pressing "1 to be removed from our list" just confirms your number is active and leads to more scam calls. Don't engage, don't argue, don't say "yes" to anything. Just hang up.</p>
+    </div>
+  </div>
+
+  <!-- 7. Email & Text Safety -->
+  <div class="protect-section" id="email-text-safety">
+    <div class="ps-icon">📧</div>
+    <h2>Email &amp; Text Safety</h2>
+    <p class="ps-intro">One click on a fake link can compromise your entire digital life. Here's how to spot them.</p>
+
+    <p>The golden rule of email and text safety: never click a link in an unexpected message. If your "bank" texts you saying there's a problem with your account, don't click the link in the text. Instead, open your browser and type your bank's website address yourself, or call the number on the back of your card. This one habit will protect you from the vast majority of phishing attacks.</p>
+
+    <p>If you want to check whether a link is legitimate before clicking, you can preview it. On a computer, hover your mouse over the link without clicking — the real URL will appear at the bottom of your browser. On a phone, press and hold the link to see where it actually goes. If the URL looks strange, misspelled, or doesn't match the company that supposedly sent it, don't click.</p>
+
+    <p>Common red flags in phishing emails and texts: the message creates a false sense of urgency ("your account will be locked in 24 hours"), it uses threatening language ("legal action will be taken"), it contains misspellings or odd grammar, the sender's email address looks slightly off (like support@amaz0n-security.com instead of amazon.com), or it asks you to "verify" personal information.</p>
+
+    <div class="callout">
+      <p><strong>Teach your parent this phrase:</strong> "When in doubt, don't click. Type it yourself." If they get a suspicious email from their bank, doctor, or the government, they should close the email and go directly to the website by typing the address into their browser. This simple habit blocks nearly every phishing scam.</p>
+    </div>
+  </div>
+
+  <!-- 8. What to Tell Your Parents -->
+  <div class="protect-section" id="talk-to-parents">
+    <div class="ps-icon">💬</div>
+    <h2>What to Tell Your Parents</h2>
+    <p class="ps-intro">The hardest part isn't the technology. It's having the conversation without making them feel patronized.</p>
+
+    <p>Nobody wants to feel like their children think they're losing it. When you bring up scam protection with your parents, the framing matters more than the information. Don't say "you need to be more careful" — say "these scammers are getting incredibly sophisticated, and I want to make sure we're both protected." Make it a "we" thing, not a "you" thing.</p>
+
+    <p>Some conversation starters that work: "Hey, I just set up a credit freeze for myself and I realized I should help you do it too." Or: "I heard about this new scam where they clone people's voices with AI — have you heard about that? Let's pick a family code word just in case." Or simply: "I read this article about scams targeting families, and I wanted to share it with you."</p>
+
+    <p>If your parent has already been scammed or come close, be especially gentle. Falling for a scam is not a sign of cognitive decline — it's a sign that a professional criminal did their job well. These people manipulate thousands of victims. Your parent is not stupid. They were targeted by someone whose full-time job is deception.</p>
+
+    <div class="callout callout-amber">
+      <p><strong>The most important thing you can say:</strong> "If you ever get a call or message that feels off, call me before you do anything. I will never judge you for asking. I would rather get 100 false alarm calls from you than miss the one that matters. You're not being paranoid. You're being smart."</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h3>Get weekly scam alerts</h3>
+    <p>Every week we break down the latest scam targeting your family and tell you exactly what to do about it.</p>
+    <form class="cta-form" onsubmit="event.preventDefault(); handleSignup();">
+      <input type="email" id="ctaEmail" placeholder="Your email address" required>
+      <button type="submit" id="ctaBtn">Subscribe Free</button>
+    </form>
+    <div class="cta-success" id="ctaSuccess">You're in! Check your inbox.</div>
+    <div class="cta-error" id="ctaError"></div>
+  </div>
+
+</div>
+
+<footer>
+  <a href="/">Is This a Scam?</a> &middot; <a href="/scams/">Scam Library</a> &middot; <a href="/#signup">Get free alerts</a>
+  <br>&copy; 2026 isthisascam.news
+</footer>
+
+<script>
+  async function handleSignup() {
+    const email = document.getElementById('ctaEmail').value.trim();
+    const btn = document.getElementById('ctaBtn');
+    const ok = document.getElementById('ctaSuccess');
+    const err = document.getElementById('ctaError');
+    err.style.display = 'none'; ok.style.display = 'none';
+    if (!email || !email.includes('@')) { err.textContent = 'Please enter a valid email.'; err.style.display = 'block'; return; }
+    btn.disabled = true; btn.textContent = 'Sending...';
+    try {
+      const r = await fetch('https://signup.isthisascam.news/subscribe', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ email }) });
+      if (r.ok) { ok.style.display = 'block'; document.getElementById('ctaEmail').value = ''; btn.textContent = 'Subscribed!'; }
+      else throw new Error();
+    } catch (e) { err.textContent = 'Something went wrong.'; err.style.display = 'block'; btn.disabled = false; btn.textContent = 'Subscribe Free'; }
+  }
+</script>
+</body>
+</html>
