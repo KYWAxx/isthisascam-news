@@ -184,6 +184,22 @@ def render_page(slug: str, data: dict) -> str:
         if rc:
             related_html += f'<a href="/scams/{rs}" class="related-card"><span>{rc["icon"]}</span> {html_mod.escape(rc["name"])}</a>\n'
 
+    # Schema.org structured data
+    schema_json = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": data.get("title", ""),
+        "description": data.get("meta_description", ""),
+        "url": f"https://isthisascam.news/scams/{slug}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Is This a Scam?",
+            "url": "https://isthisascam.news",
+        },
+        "mainEntityOfPage": f"https://isthisascam.news/scams/{slug}",
+        "articleSection": "Scam Library",
+    })
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,6 +209,12 @@ def render_page(slug: str, data: dict) -> str:
 <meta name="description" content="{meta_desc}">
 <meta property="og:title" content="{title} | Is This a Scam?">
 <meta property="og:description" content="{meta_desc}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://isthisascam.news/scams/{slug}">
+<meta property="og:image" content="https://isthisascam.news/og-image.png">
+<meta property="og:site_name" content="Is This a Scam?">
+<link rel="canonical" href="https://isthisascam.news/scams/{slug}">
+<script type="application/ld+json">{schema_json}</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">

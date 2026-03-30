@@ -1,6 +1,6 @@
 {
-  "title": "AI Voice Cloning Scams",
-  "meta_description": "Learn about AI voice cloning scams targeting seniors, how they operate, and protective measures.",
+  "title": "AI Voice Cloning Scams: When Criminals Sound Like Family",
+  "meta_description": "Criminals use AI to clone your family member's voice from social media. Reports up 300%+. Learn how AI voice cloning scams work and how to verify.",
   "overview": "AI voice cloning scams are a sophisticated form of fraud where scammers use artificial intelligence to mimic the voices of trusted individuals such as family members or financial advisors. By using deepfake technology, these scammers can create realistic audio messages that trick victims into thinking their loved ones are in distress and need immediate financial assistance. According to the Federal Trade Commission (FTC), voice cloning scams have been on the rise since 2019, with reported losses totaling millions of dollars. This scam is particularly dangerous for seniors who may be more trusting or less technologically savvy.",
   "how_it_works": [
     "Step 1: Scammers gather audio samples from publicly available sources such as YouTube videos or social media.",
@@ -31,9 +31,9 @@
     "Social media platforms where scammers gather data to clone voices"
   ],
   "related_scams": [
-    "imposter-scams",
-    "elder-financial-fraud",
-    "tech-support-scams"
+    "grandparent-scams",
+    "virtual-kidnapping",
+    "sim-swapping"
   ],
   "action_plan": {
     "immediate": {

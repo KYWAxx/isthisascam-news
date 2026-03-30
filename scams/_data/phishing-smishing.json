@@ -1,6 +1,6 @@
 {
-  "title": "Phishing & Smishing",
-  "meta_description": "Learn how to protect your aging parents from phishing and smishing scams. Get expert advice on spotting and avoiding these dangerous schemes.",
+  "title": "Phishing & Smishing: Fake Emails and Texts Explained",
+  "meta_description": "Fake emails and texts from banks, delivery services, and the IRS. Learn how phishing and smishing attacks work and how to protect your family.",
   "overview": "Phishing and smishing are two common types of fraud that target unsuspecting victims, often including older adults who may be less familiar with online security measures. Phishing occurs through email or instant messaging, where scammers impersonate legitimate companies or individuals to steal sensitive information such as passwords and financial details. Smishing, on the other hand, uses text messages for similar fraudulent activities. According to the Federal Trade Commission (FTC), phishing and related scams cost Americans over $140 million in 2022 alone. The Better Business Bureau (BBB) reports that older adults are particularly vulnerable due to a lack of digital literacy and reliance on technology for communication.",
   "how_it_works": [
     "Step 1: Scammers send an email or text message appearing to be from a legitimate source.",
@@ -31,9 +31,9 @@
     "Social media platforms where scammers can send direct messages"
   ],
   "related_scams": [
-    "identity-theft-protection",
+    "qr-code-scams",
     "tech-support-scams",
-    "grandparent-scam"
+    "irs-ssa-impersonation"
   ],
   "action_plan": {
     "immediate": {

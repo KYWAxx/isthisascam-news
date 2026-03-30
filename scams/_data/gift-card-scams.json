@@ -1,6 +1,6 @@
 {
-  "title": "Gift Card Scams",
-  "meta_description": "Learn how to protect your aging parents from the dangers of gift card scams. Real statistics and prevention tips.",
+  "title": "Gift Card Scams: Why Scammers Always Want Gift Cards",
+  "meta_description": "\"Buy gift cards and read me the numbers.\" Gift card payment is the hallmark of nearly every phone scam. Learn why and how to protect your parent.",
   "overview": "Gift card scams are a prevalent form of fraud where scammers trick victims into purchasing and handing over gift cards, thereby transferring money directly to them. According to the Federal Trade Commission (FTC), consumers reported losing nearly $200 million in such scams between January 2020 and September 2021. These scams are particularly dangerous because once a gift card is redeemed, there's no way to reverse the transaction or get your money back. Scammers often use fear tactics, urgency, and impersonation of legitimate organizations like government agencies, law enforcement, or utility companies to convince their targets.",
   "how_it_works": [
     "Step 1: The scammer contacts the victim through a phone call, text message, email, or social media platform, claiming to be from an official entity such as the IRS, FBI, or a power company.",
@@ -31,9 +31,9 @@
     "Social media platforms like Facebook Messenger"
   ],
   "related_scams": [
-    "imposter-scams",
-    "tech-support-fraud",
-    "grandparent-scam"
+    "grandparent-scams",
+    "tech-support-scams",
+    "irs-ssa-impersonation"
   ],
   "action_plan": {
     "immediate": {

@@ -1,6 +1,6 @@
 {
-  "title": "QR Code Scams",
-  "meta_description": "Learn about QR code scams targeting seniors and how to protect your loved ones from these deceptive tactics.",
+  "title": "QR Code Scams: Fake Codes That Steal Your Information",
+  "meta_description": "Fake QR codes on parking meters, menus, and flyers redirect to phishing sites. Learn how QR code scams work and how to stay safe.",
   "overview": "QR code scams have become increasingly prevalent as scammers exploit the convenience of quick-response codes to trick unsuspecting victims. According to the Federal Trade Commission (FTC), consumers reported losing over $10 million in various online fraud schemes involving QR codes in just one year. These scams can take many forms, such as fake coupons, false charity drives, and misleading links that lead to malicious websites or malware downloads. The danger lies not only in financial loss but also in the potential for identity theft, where sensitive personal information is compromised.",
   "how_it_works": [
     "Step 1: Scammers create a QR code linked to a fraudulent website.",
@@ -31,9 +31,9 @@
     "Flyers or signs in public spaces directing people to scan a QR code for information or services."
   ],
   "related_scams": [
-    "phishing-email-scams",
-    "tech-support-fraud",
-    "ransomware-attacks"
+    "phishing-smishing",
+    "tech-support-scams",
+    "sim-swapping"
   ],
   "action_plan": {
     "immediate": {

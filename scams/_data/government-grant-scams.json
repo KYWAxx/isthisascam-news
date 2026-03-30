@@ -1,6 +1,6 @@
 {
-  "title": "Government Grant Scams",
-  "meta_description": "Learn about Government Grant Scams, how they work, and protect your loved ones from fraud. Real stats and expert advice.",
+  "title": "Government Grant Scams: How They Work & What To Do",
+  "meta_description": "Scammers pose as government officials offering free grants. Learn how government grant scams work, red flags to watch for, and what to do if targeted.",
   "overview": "Government grant scams often claim that the victim is entitled to a significant amount of money from the government but needs to pay an upfront fee or provide personal information first. According to the Federal Trade Commission (FTC), in 2021, victims lost over $5 million in these types of schemes. The perpetrators prey on people's hopes for financial relief and often target older adults who may be less familiar with online scams.",
   "how_it_works": [
     "Step 1: Scammers contact the victim by phone or email, claiming to represent a government agency offering grants.",
@@ -31,9 +31,9 @@
     "Social media messages directing victims to websites asking for personal details"
   ],
   "related_scams": [
-    "stimulus-check-scams",
-    "social-security-benefits-fraud",
-    "investment-scam-alerts"
+    "irs-ssa-impersonation",
+    "gift-card-scams",
+    "phishing-smishing"
   ],
   "action_plan": {
     "immediate": {

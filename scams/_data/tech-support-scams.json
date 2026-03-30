@@ -1,6 +1,6 @@
 {
-  "title": "Tech Support Scams",
-  "meta_description": "Protect your parents from tech support scams. Learn the warning signs and how to stay safe.",
+  "title": "Tech Support Scams: Fake Virus Alerts & Remote Access Fraud",
+  "meta_description": "\"Your computer has a virus.\" Tech support scammers use pop-ups and calls to steal money and access. Learn how to spot and stop these scams.",
   "overview": "Tech support scams are fraudulent schemes where scammers pose as legitimate technical support personnel, often claiming to be from well-known companies like Microsoft or Apple. They convince victims that their computers have critical issues or malware infections and demand money for services they don't need. According to the Federal Trade Commission (FTC), tech support scams cost consumers over $105 million in 2021 alone. These scams are particularly dangerous because they can lead not only to financial loss but also to significant data breaches, putting sensitive personal information at risk.",
   "how_it_works": [
     "Step 1: Scammers contact the victim through a pop-up ad or unsolicited phone call, claiming there's an urgent problem with their computer.",
@@ -31,9 +31,9 @@
     "Emails with links to fake security software"
   ],
   "related_scams": [
-    "tech-support-scammers-target-elderly",
-    "how-to-spot-and-prevent-tech-support-fraud",
-    "the-rise-of-gift-card-scams-in-2023"
+    "phishing-smishing",
+    "gift-card-scams",
+    "sim-swapping"
   ],
   "action_plan": {
     "immediate": {

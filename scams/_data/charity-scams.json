@@ -1,6 +1,6 @@
 {
-  "title": "Charity Scams",
-  "meta_description": "Learn about charity scams targeting seniors, including how they work and how to protect your loved ones.",
+  "title": "Charity Scams: How Fake Nonprofits Steal Donations",
+  "meta_description": "Fake charities exploit disasters and emotions to steal donations. Learn how to verify real charities and avoid charity scam red flags.",
   "overview": "Charity scams are fraudulent schemes where scammers pose as representatives of legitimate charities to solicit donations from unsuspecting victims. According to the Federal Trade Commission (FTC), in 2021 alone, over $16 million was lost by individuals who fell victim to charity scams. These scams exploit people's generosity, especially during times of crisis or natural disasters when sympathy is high. Scammers often use emotional appeals and urgent requests for donations to pressure victims into giving money quickly.",
   "how_it_works": [
     "Step 1: The scammer identifies a charitable cause that resonates with potential donors, such as disaster relief efforts or support for underprivileged children.",
@@ -31,9 +31,9 @@
     "Social Media: Fraudsters may create fake profiles impersonating real charities and post requests for donations."
   ],
   "related_scams": [
-    "emergency-fraud",
-    "identity-theft",
-    "investment-scam"
+    "phishing-smishing",
+    "government-grant-scams",
+    "gift-card-scams"
   ],
   "action_plan": {
     "immediate": {

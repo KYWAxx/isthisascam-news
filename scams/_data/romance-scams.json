@@ -1,6 +1,6 @@
 {
-  "title": "Romance Scams",
-  "meta_description": "Learn about romance scams and how to protect your aging parents from these emotional manipulations. Stay informed and keep loved ones safe.",
+  "title": "Romance Scams: How Fake Relationships Drain Savings",
+  "meta_description": "Romance scammers build fake relationships to steal money over weeks or months. Median loss: $2,000+. Learn the signs and how to protect your parent.",
   "overview": "Romance scams are a form of fraud where scammers use fake online profiles on dating websites, apps, or social media platforms to establish romantic relationships with their targets. They often build a deep connection over time before eventually requesting money for personal emergencies or travel expenses. According to the Federal Trade Commission (FTC), victims lost $304 million in romance scams alone in 2021, making it one of the most damaging types of fraud. Scammers prey on loneliness and emotional vulnerability, causing significant financial and emotional harm.",
   "how_it_works": [
     "Step 1: The scammer creates a fake online profile using stolen or fabricated personal information.",
@@ -31,9 +31,9 @@
     "Online chat rooms and forums"
   ],
   "related_scams": [
-    "investment-scam",
-    "lottery-scam",
-    "grandparent-scammers"
+    "investment-crypto-scams",
+    "gift-card-scams",
+    "phishing-smishing"
   ],
   "action_plan": {
     "immediate": {

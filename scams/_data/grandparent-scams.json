@@ -1,6 +1,6 @@
 {
-  "title": "Grandparent Scams",
-  "meta_description": "Protect your aging parents from grandparent scams, where fraudsters impersonate grandchildren in distress.",
+  "title": "Grandparent Scams: The Fake Emergency Call Explained",
+  "meta_description": "\"Grandma, I'm in jail.\" Grandparent scam callers impersonate family in crisis. Learn how it works, warning signs, and how to protect your parents.",
   "overview": "Grandparent scams are a particularly cruel form of fraud targeting older adults. In these schemes, scammers call and pretend to be the victim's grandchild, claiming they need urgent financial help due to an emergency such as legal troubles or medical bills. According to the Federal Trade Commission (FTC), individuals reported losing over $180 million in 2022 alone from this type of scam. The FBI\u2019s Internet Crime Complaint Center (IC3) reports that seniors are often chosen because they may be more trusting and less aware of common fraud tactics, making them vulnerable targets.",
   "how_it_works": [
     "Step 1: Scammers call the grandparent using a spoofed phone number to appear as if it's coming from their grandchild's location or device.",
@@ -31,9 +31,9 @@
     "Emails that mimic the style of your grandchild\u2019s usual communication"
   ],
   "related_scams": [
-    "romance-scams",
-    "tech-support-scams",
-    "investment-fraud"
+    "ai-voice-cloning-scams",
+    "virtual-kidnapping",
+    "gift-card-scams"
   ],
   "action_plan": {
     "immediate": {

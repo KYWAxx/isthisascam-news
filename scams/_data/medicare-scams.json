@@ -1,6 +1,6 @@
 {
-  "title": "Medicare Scams",
-  "meta_description": "Protect your aging parents from Medicare scams. Learn how to spot and avoid these dangerous frauds.",
+  "title": "Medicare Scams: Fake Reps, Free Equipment & Card Theft",
+  "meta_description": "Scammers call pretending to be Medicare, offering free equipment or new cards. They want your Medicare number. Learn how to spot these scams.",
   "overview": "Medicare scams are a serious threat, often targeting older adults with false promises of free medical supplies or services in exchange for personal information. According to the Federal Trade Commission (FTC), individuals over 60 lose an estimated $3 billion annually due to fraud schemes like these. These scammers can be highly convincing and may impersonate Medicare officials or legitimate healthcare providers, leading victims to share sensitive data that can lead to financial loss and identity theft.",
   "how_it_works": [
     "Step 1: The scammer contacts the victim via phone call or email pretending to be a Medicare representative.",
@@ -31,9 +31,9 @@
     "Direct mail with offers of free health services"
   ],
   "related_scams": [
-    "medical-supply-scams",
-    "health-insurance-fraud",
-    "elderly-financial-exploitation"
+    "irs-ssa-impersonation",
+    "government-grant-scams",
+    "phishing-smishing"
   ],
   "action_plan": {
     "immediate": {

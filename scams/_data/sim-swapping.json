@@ -1,6 +1,6 @@
 {
-  "title": "SIM Swapping",
-  "meta_description": "Protect your parents from SIM swapping scams: understand how it works, recognize red flags, and take action to stay safe.",
+  "title": "SIM Swapping: How Criminals Hijack Your Phone Number",
+  "meta_description": "SIM swap attacks let criminals steal your phone number, intercept texts, and drain accounts. Learn how it works and how to prevent it.",
   "overview": "SIM swapping is a sophisticated scam where fraudsters hijack someone's mobile phone number by taking control of their SIM card. They achieve this by convincing the victim\u2019s telecom provider that they are the legitimate owner. Once in possession of the phone number, scammers can access bank accounts, steal identities, and conduct fraudulent transactions. According to the Federal Trade Commission (FTC), SIM swapping scams have been reported in increasing numbers, with over 30% of victims experiencing financial loss. The Better Business Bureau (BBB) has also noted a significant rise in complaints, highlighting the need for heightened vigilance among consumers.",
   "how_it_works": [
     "Step 1: Scammers gather personal information about their target through various means like social media or data breaches.",
@@ -31,9 +31,9 @@
     "Phishing emails or calls pretending to be from service providers asking for personal information."
   ],
   "related_scams": [
-    "account-takeover",
-    "phishing-schemes",
-    "identity-theft"
+    "phishing-smishing",
+    "tech-support-scams",
+    "investment-crypto-scams"
   ],
   "action_plan": {
     "immediate": {
