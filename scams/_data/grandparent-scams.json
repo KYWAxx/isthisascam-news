@@ -34,5 +34,56 @@
     "romance-scams",
     "tech-support-scams",
     "investment-fraud"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card issuers to report the fraud and request they freeze any accounts involved in the scam.",
+        "If you sent money via gift cards, contact the issuing company immediately. For example, if it was a Walmart or Target gift card, call their customer service (Walmart: 1-800-339-9745, Target: 1-800-846-2334) to report the fraud.",
+        "If you provided any personal information, monitor your bank statements and credit reports for any unusual activity.",
+        "Secure any devices used during the scam by changing passwords and updating security software."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov, providing details of how you were contacted and what information was compromised.",
+        "File with FBI IC3 at ic3.gov to provide additional details that may help law enforcement track the scammer.",
+        "Contact local police for a report number; bring any emails or phone records as evidence.",
+        "File with your state Attorney General\u2019s office, as they often have consumer protection units."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute charges on your credit card statements and request a refund for any money sent via gift cards.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.",
+        "Consider setting up fraud alerts with your financial institutions and monitor your accounts for unauthorized transactions."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Change passwords on any compromised accounts, especially if the scammer may have accessed personal information or login credentials.",
+        "If sensitive documents like Social Security numbers were shared, consider placing a fraud alert with credit bureaus."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; you are not alone.",
+        "Talk to someone you trust about what happened, such as a family member or close friend.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.",
+        "Watch for follow-up scams targeting previous victims, staying vigilant against further manipulation.",
+        "Continue changing passwords and updating security measures on your devices."
+      ]
+    }
+  }
 }

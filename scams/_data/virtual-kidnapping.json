@@ -34,5 +34,56 @@
     "grandparent-scams",
     "romance-scam-checklist",
     "lottery-scam-protection"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card issuers to report any unauthorized transactions or activity.",
+        "Call the police immediately if you have not already done so, even if you believe it was a scam. Provide them with detailed information about what happened.",
+        "If money was sent via gift cards, contact the company associated with those gift cards to report fraudulent use and request assistance in recovering funds.",
+        "Change passwords for any accounts that may have been compromised or that were mentioned during the call."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report the incident to the Federal Trade Commission at reportfraud.ftc.gov, detailing how much money was lost and what type of communication you had with the scammer.",
+        "File a complaint with the FBI's Internet Crime Complaint Center (IC3) at ic3.gov providing all relevant information including dates, amounts, and any communications.",
+        "Contact your local police department to file a report. This is crucial for insurance claims or if further legal action is necessary.",
+        "Submit an online consumer complaint form with your state Attorney General\u2019s office for additional support."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any unauthorized transactions with your bank and request a fraud alert on your credit reports.",
+        "Freeze your credit at all three bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent scammers from opening new accounts in your name.",
+        "If you provided bank account information or remote access to your computer, contact IT support for a security assessment and possible cleanup of any malware."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Check if personal identification details were compromised during the scam. If so, update passwords on all sensitive accounts (banking, email, social media).",
+        "Consider signing up for a credit monitoring service to keep an eye out for any unusual activity."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "Remember that scammers are professionals who manipulate many people. You were targeted because of their tactics, not due to your actions.",
+        "Reach out to a trusted friend or family member about what happened and how you feel; sharing can be very healing.",
+        "Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free support from trained counselors."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor your credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.",
+        "Stay vigilant against follow-up scams that may target previous victims. Be suspicious of unsolicited calls or emails requesting further information or payments.",
+        "Continue to update passwords and security settings on all online accounts, especially those related to banking or personal identification."
+      ]
+    }
+  }
 }

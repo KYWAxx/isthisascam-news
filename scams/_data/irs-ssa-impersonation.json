@@ -34,5 +34,57 @@
     "unexpected-debt",
     "phishing-emails",
     "tech-support-scams"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank immediately to report any unauthorized transactions and request a fraud alert on your accounts.",
+        "If you have given scammers remote access to your computer, disconnect from the internet, run antivirus software, and change all passwords.",
+        "If you provided gift card PINs or prepaid cards, contact the company directly (e.g., Walmart for Walmart gift cards) to report the scam and request a refund if possible.",
+        "Review any documents shared with scammers and secure your personal information by shredding physical copies."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov, providing details of the scam including dates, amounts, and how you were contacted.",
+        "File with FBI IC3 at ic3.gov, ensuring to include all communication records such as emails or phone numbers used by scammers.",
+        "Contact local police for a report number; provide them with any evidence you have, like call logs or email exchanges.",
+        "File with your state Attorney General\u2019s office to ensure they are aware of the scam and can assist in broader investigations."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any charges made by scammers with your financial institutions. Provide them with all evidence you have.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent new accounts from being opened in your name.",
+        "Consider placing a fraud alert on your credit reports which will require creditors to take extra steps to verify your identity before opening any new account."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Change passwords for all financial and personal accounts, especially if you suspect this information was compromised.",
+        "Monitor your credit reports weekly at annualcreditreport.com to look for any unauthorized activity.",
+        "If Social Security number was shared, contact the SSA at 1-800-772-1213 or ssa.gov to report fraud and consider setting up a fraud alert."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; you were targeted for your vulnerability, not because of any flaw in yourself.",
+        "Talk to someone you trust about what happened to process the emotional impact and get support.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from experienced counselors who can provide guidance."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to ensure no new fraudulent activity is occurring.",
+        "Watch for follow-up scams targeting previous victims, such as requests for additional payments or threats of legal action.",
+        "Continue to secure all personal information and update security measures on your devices and accounts."
+      ]
+    }
+  }
 }

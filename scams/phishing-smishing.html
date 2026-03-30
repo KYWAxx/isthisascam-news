@@ -62,6 +62,22 @@
   .related-card { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
   .related-card:hover { border-color: var(--blue); }
 
+  .action-plan { margin-top: 16px; }
+  .ap-phase { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .ap-phase-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ap-phase-header:hover { background: #E0EDFF; }
+  .ap-phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .ap-phase-title { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .ap-phase-body { padding: 20px 24px; }
+  .ap-phase-body li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }
+  .ap-phase-body li:last-child { border-bottom: none; }
+  .ap-check { color: var(--blue); flex-shrink: 0; }
+  .ap-emotional { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header:hover { background: #FDE68A; }
+  .ap-emotional .ap-phase-num { background: var(--amber); }
+  .ap-emotional .ap-check { color: var(--amber); }
+
   .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
   .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
   .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
@@ -92,6 +108,7 @@
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -104,7 +121,7 @@
 <article class="article">
   <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scams/">Scam Library</a> &rsaquo; Phishing &amp; Smishing</div>
 
-  <div class="article-icon">🎣</div>
+  <div class="article-icon">📋</div>
   <h1>Phishing &amp; Smishing</h1>
 
   <h2 class="section-heading">What is this scam?</h2>
@@ -132,14 +149,51 @@
 
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    <li><span class="action-icon">✅</span> Never click on links from unknown senders.</li>
-<li><span class="action-icon">✅</span> Contact the supposed sender directly using a known phone number or website, not one provided in the message.</li>
-<li><span class="action-icon">✅</span> Report suspicious emails to your bank or service provider immediately.</li>
-<li><span class="action-icon">✅</span> Use two-factor authentication wherever possible.</li>
-
-  </ul>
+  <h2 class="section-heading">Victim recovery plan</h2>
+  <div class='action-plan'><div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">1</span><span class="ap-phase-title">First 24 Hours</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🚨</span> Change passwords for all accounts that may have been compromised or accessed through phishing emails, especially financial and email accounts.</li>
+<li><span class="ap-check">🚨</span> Enable two-factor authentication (2FA) on all your online accounts to add an extra layer of security.</li>
+<li><span class="ap-check">🚨</span> Run a full system scan using reputable antivirus software to check if your device has been infected by malware from the phishing link.</li>
+<li><span class="ap-check">🚨</span> Disconnect any devices that were connected to the compromised network and perform a factory reset, then reinstall necessary applications.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">2</span><span class="ap-phase-title">File Reports</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📝</span> Report to FTC at reportfraud.ftc.gov for comprehensive documentation and assistance in tracking fraud.</li>
+<li><span class="ap-check">📝</span> File with FBI IC3 at ic3.gov to provide detailed information about the phishing or smishing scam.</li>
+<li><span class="ap-check">📝</span> Contact local police for a report number, which can be useful if financial losses are involved.</li>
+<li><span class="ap-check">📝</span> File with your state Attorney General to ensure that state-level resources are aware of and can assist in addressing the scam.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">3</span><span class="ap-phase-title">Financial Recovery</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💳</span> Contact banks or credit card companies immediately to freeze any unauthorized transactions made through phishing.</li>
+<li><span class="ap-check">💳</span> Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent new account fraud.</li>
+<li><span class="ap-check">💳</span> If gift cards were used, contact the issuing company immediately to report the fraudulent transactions.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">4</span><span class="ap-phase-title">Protect Your Identity</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🔒</span> Notify major credit bureaus and request a fraud alert if any personal information (like SSN) was compromised.</li>
+<li><span class="ap-check">🔒</span> If you suspect identity theft, consider setting up a fraud alert or a credit freeze to prevent new accounts from being opened in your name.</li>
+</ul></div>
+</div>
+<div class="ap-phase ap-emotional">
+  <div class="ap-phase-header"><span class="ap-phase-num">5</span><span class="ap-phase-title">It&#x27;s Not Your Fault</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💛</span> Remember that these scammers are professionals who manipulate thousands of people; you were not at fault for falling victim.</li>
+<li><span class="ap-check">💛</span> Talk to someone you trust about what happened. Sharing your experience can help you process and move forward.</li>
+<li><span class="ap-check">💛</span> Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from trained volunteers who understand scams.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">6</span><span class="ap-phase-title">Follow-Up (Weeks 2-8)</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📋</span> Monitor credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.</li>
+<li><span class="ap-check">📋</span> Watch for follow-up scams targeting previous victims, often asking for more information or money under false pretenses.</li>
+<li><span class="ap-check">📋</span> Regularly review bank statements and account activities online for signs of unauthorized transactions.</li>
+</ul></div>
+</div>
+</div>
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

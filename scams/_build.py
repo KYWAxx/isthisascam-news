@@ -128,6 +128,7 @@ def render_page(slug: str, data: dict) -> str:
     what_to_do = data.get("what_to_do", [])
     entry_points = data.get("entry_points", [])
     related_slugs = data.get("related_scams", [])
+    action_plan = data.get("action_plan", {})
 
     # Build HTML sections
     overview_html = "".join(f"<p>{html_mod.escape(p)}</p>" for p in overview.split("\n\n")) if "\n\n" in overview else f"<p>{html_mod.escape(overview)}</p>"
@@ -148,6 +149,30 @@ def render_page(slug: str, data: dict) -> str:
     actions_html = ""
     for action in what_to_do:
         actions_html += f'<li><span class="action-icon">✅</span> {html_mod.escape(action)}</li>\n'
+
+    # Expanded action plan
+    action_plan_html = ""
+    if action_plan and isinstance(action_plan, dict):
+        phase_order = ["immediate", "reporting", "financial", "identity", "emotional", "followup"]
+        phase_icons = {"immediate": "🚨", "reporting": "📝", "financial": "💳", "identity": "🔒", "emotional": "💛", "followup": "📋"}
+        phase_num = 0
+        for key in phase_order:
+            phase = action_plan.get(key)
+            if not phase or not isinstance(phase, dict):
+                continue
+            phase_num += 1
+            p_title = html_mod.escape(phase.get("title", key.title()))
+            steps = phase.get("steps", [])
+            is_emotional = key == "emotional"
+            extra_class = " ap-emotional" if is_emotional else ""
+            icon = phase_icons.get(key, "✅")
+            steps_li = ""
+            for s in steps:
+                steps_li += f'<li><span class="ap-check">{icon}</span> {html_mod.escape(s)}</li>\n'
+            action_plan_html += f'''<div class="ap-phase{extra_class}">
+  <div class="ap-phase-header"><span class="ap-phase-num">{phase_num}</span><span class="ap-phase-title">{p_title}</span></div>
+  <div class="ap-phase-body"><ul>{steps_li}</ul></div>
+</div>\n'''
 
     entry_html = ""
     for ep in entry_points:
@@ -223,6 +248,22 @@ def render_page(slug: str, data: dict) -> str:
   .related-card {{ display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }}
   .related-card:hover {{ border-color: var(--blue); }}
 
+  .action-plan {{ margin-top: 16px; }}
+  .ap-phase {{ background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }}
+  .ap-phase-header {{ display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }}
+  .ap-phase-header:hover {{ background: #E0EDFF; }}
+  .ap-phase-num {{ width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }}
+  .ap-phase-title {{ font-weight: 700; font-size: 15px; color: var(--navy); }}
+  .ap-phase-body {{ padding: 20px 24px; }}
+  .ap-phase-body li {{ padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }}
+  .ap-phase-body li:last-child {{ border-bottom: none; }}
+  .ap-check {{ color: var(--blue); flex-shrink: 0; }}
+  .ap-emotional {{ background: var(--amber-light); }}
+  .ap-emotional .ap-phase-header {{ background: var(--amber-light); }}
+  .ap-emotional .ap-phase-header:hover {{ background: #FDE68A; }}
+  .ap-emotional .ap-phase-num {{ background: var(--amber); }}
+  .ap-emotional .ap-check {{ color: var(--amber); }}
+
   .cta-box {{ background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }}
   .cta-box h3 {{ font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }}
   .cta-box p {{ color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }}
@@ -253,6 +294,7 @@ def render_page(slug: str, data: dict) -> str:
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -282,10 +324,8 @@ def render_page(slug: str, data: dict) -> str:
     {flags_html}
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    {actions_html}
-  </ul>
+  <h2 class="section-heading">{"Victim recovery plan" if action_plan_html else "What to do if you're targeted"}</h2>
+  {"<div class='action-plan'>" + action_plan_html + "</div>" if action_plan_html else "<ul class='actions-list'>" + actions_html + "</ul>"}
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

@@ -34,5 +34,56 @@
     "phishing-email-scams",
     "tech-support-fraud",
     "ransomware-attacks"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank immediately to report unauthorized transactions and request a fraud alert on your account.",
+        "Change passwords for all online accounts, especially those related to financial institutions or payment methods you used.",
+        "Disable any two-factor authentication apps if the scammer had access to your device.",
+        "Check your devices for any unusual activity or unauthorized apps installed by scanning with reputable antivirus software."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov detailing the QR code scam and providing transaction information.",
+        "File with FBI IC3 at ic3.gov, including any unique identifiers from the scam such as email addresses or phone numbers used by scammers.",
+        "Contact local police for a report number; provide them with all details of the scam including dates, amounts lost, and how you were contacted.",
+        "File with your state Attorney General to ensure that your case is on record and can be part of broader efforts against QR code scams."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any fraudulent charges directly with the financial institution or payment method used. Provide them with all evidence you have collected.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.",
+        "If gift cards were used, contact the respective company to report the scam and attempt to recover funds if possible."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Monitor your credit reports for any unauthorized activity. If personal information was compromised, consider placing a fraud alert on your credit files.",
+        "If you suspect the scammer has access to sensitive information like Social Security numbers or passport details, contact relevant agencies and update security measures."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; remember that falling for their tactics is not a reflection of your intelligence.",
+        "Talk to someone you trust about what happened. Sharing the experience can provide relief and support during this stressful time.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from experts who understand the emotional impact of these scams."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com for any signs of identity theft or unauthorized activity.",
+        "Watch for follow-up scams targeting previous victims. Scammers often exploit the trust gained in initial contacts.",
+        "Secure your devices and networks by ensuring all software is up to date, using strong passwords, and being cautious with QR codes from unknown sources."
+      ]
+    }
+  }
 }

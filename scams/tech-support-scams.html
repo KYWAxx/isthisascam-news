@@ -62,6 +62,22 @@
   .related-card { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
   .related-card:hover { border-color: var(--blue); }
 
+  .action-plan { margin-top: 16px; }
+  .ap-phase { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .ap-phase-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ap-phase-header:hover { background: #E0EDFF; }
+  .ap-phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .ap-phase-title { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .ap-phase-body { padding: 20px 24px; }
+  .ap-phase-body li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }
+  .ap-phase-body li:last-child { border-bottom: none; }
+  .ap-check { color: var(--blue); flex-shrink: 0; }
+  .ap-emotional { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header:hover { background: #FDE68A; }
+  .ap-emotional .ap-phase-num { background: var(--amber); }
+  .ap-emotional .ap-check { color: var(--amber); }
+
   .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
   .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
   .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
@@ -92,6 +108,7 @@
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -104,7 +121,7 @@
 <article class="article">
   <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scams/">Scam Library</a> &rsaquo; Tech Support Scams</div>
 
-  <div class="article-icon">🖥️</div>
+  <div class="article-icon">📋</div>
   <h1>Tech Support Scams</h1>
 
   <h2 class="section-heading">What is this scam?</h2>
@@ -132,14 +149,51 @@
 
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    <li><span class="action-icon">✅</span> Hang up and independently verify the company’s contact information if contacted by phone.</li>
-<li><span class="action-icon">✅</span> Never grant remote access to your device from unknown sources.</li>
-<li><span class="action-icon">✅</span> Install legitimate security software from known, trusted providers.</li>
-<li><span class="action-icon">✅</span> Report any suspicious activity to the FTC at IdentityTheft.gov.</li>
-
-  </ul>
+  <h2 class="section-heading">Victim recovery plan</h2>
+  <div class='action-plan'><div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">1</span><span class="ap-phase-title">First 24 Hours</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🚨</span> Disconnect your computer from the internet and power off to prevent further unauthorized access.</li>
+<li><span class="ap-check">🚨</span> Contact your bank or credit card company immediately if you provided financial information. Request a block on any transactions made by the scammer and consider closing compromised accounts.</li>
+<li><span class="ap-check">🚨</span> Change passwords for all online accounts, especially those related to banking, email, and social media, using strong, unique passwords.</li>
+<li><span class="ap-check">🚨</span> Run a full antivirus scan on your computer using trusted software such as Malwarebytes or Norton. If you don&#x27;t have one installed, download it from the official website.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">2</span><span class="ap-phase-title">File Reports</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📝</span> Report to FTC at reportfraud.ftc.gov providing details of the scam including dates and any amounts involved.</li>
+<li><span class="ap-check">📝</span> File a complaint with FBI IC3 at ic3.gov, giving them all pertinent information about your encounter.</li>
+<li><span class="ap-check">📝</span> Contact your local police department for a case number, which can be helpful if you need to provide proof of fraud later on.</li>
+<li><span class="ap-check">📝</span> File a report with your state Attorney General&#x27;s office, as they often have consumer protection units that deal specifically with such scams.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">3</span><span class="ap-phase-title">Financial Recovery</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💳</span> If you paid via gift cards, contact the company to see if there are any steps for reimbursement or reporting fraudulent use.</li>
+<li><span class="ap-check">💳</span> Freeze your credit at all three bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.</li>
+<li><span class="ap-check">💳</span> Set up fraud alerts with each of the credit reporting agencies and request a free credit report from annualcreditreport.com to check for any unauthorized activity.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">4</span><span class="ap-phase-title">Protect Your Identity</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🔒</span> If you shared personal information like your Social Security number or date of birth, monitor your credit reports and consider enrolling in an identity theft protection service.</li>
+<li><span class="ap-check">🔒</span> Consider filing a report with the IRS to prevent tax-related identity theft if sensitive financial details were compromised.</li>
+</ul></div>
+</div>
+<div class="ap-phase ap-emotional">
+  <div class="ap-phase-header"><span class="ap-phase-num">5</span><span class="ap-phase-title">It&#x27;s Not Your Fault</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💛</span> Remember that tech support scams are designed to intimidate and confuse you, making it easier for scammers to exploit your fears.</li>
+<li><span class="ap-check">💛</span> Reach out to a trusted friend or family member to talk about what happened. Sharing your experience can help alleviate feelings of shame or embarrassment.</li>
+<li><span class="ap-check">💛</span> Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free support and resources.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">6</span><span class="ap-phase-title">Follow-Up (Weeks 2-8)</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📋</span> Monitor your credit reports weekly at annualcreditreport.com to spot any unauthorized activity early.</li>
+<li><span class="ap-check">📋</span> Be vigilant for follow-up scams that might target previous victims, and report any suspicious contacts to the FTC or IC3.</li>
+<li><span class="ap-check">📋</span> Consider using a password manager to create strong passwords for all of your accounts, and enable two-factor authentication wherever possible.</li>
+</ul></div>
+</div>
+</div>
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

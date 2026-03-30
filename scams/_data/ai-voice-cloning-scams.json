@@ -34,5 +34,58 @@
     "imposter-scams",
     "elder-financial-fraud",
     "tech-support-scams"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card companies to alert them of the scam and request a fraud alert on all accounts.",
+        "Change passwords for any accounts that may have been compromised, especially if voice cloning was used to gain access.",
+        "If you provided remote access to your computer, immediately disconnect it from the internet and seek professional help to secure it.",
+        "Document every detail of the scam including dates, times, amounts transferred, and any conversations or interactions with the scammers."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov providing all details and mentioning AI Voice Cloning Scam.",
+        "File a complaint with FBI IC3 at ic3.gov, including any digital evidence like emails or voice messages.",
+        "Contact your local police department for a report number; mention the use of AI technology in the scam.",
+        "Notify your state Attorney General's office about the incident."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute all unauthorized charges with your bank and credit card companies, providing them with your detailed documentation.",
+        "Consider contacting gift card issuers if any cards were used in the scam, as refunds can sometimes be pursued.",
+        "Freeze your credit at Equifax (equifax.com/personal/credit-report-services), Experian (experian.com/freeze), and TransUnion (transunion.com/credit-freeze).",
+        "If money was transferred through a payment app or bank transfer, contact them to report the scam and request a refund."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Check your credit reports for any unfamiliar activity at annualcreditreport.com.",
+        "Change passwords on all online accounts, especially those related to banking or personal information.",
+        "If you shared sensitive documents like passports or IDs during the scam, report this to relevant authorities and consider placing a fraud alert."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "Recognize that scammers use sophisticated methods to manipulate and deceive their targets.",
+        "Reach out to friends or family members for support; talking about your experience can help you process the emotional impact.",
+        "Contact the AARP Fraud Watch Network at 877-908-3360 for free, confidential counseling."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor your credit reports and bank statements weekly for any unusual activity.",
+        "Be wary of follow-up scams or attempts to contact you again; delete all related emails and messages.",
+        "Consider setting up a fraud alert through the major credit bureaus if you haven't already."
+      ]
+    }
+  }
 }

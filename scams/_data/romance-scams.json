@@ -34,5 +34,57 @@
     "investment-scam",
     "lottery-scam",
     "grandparent-scammers"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card issuers to inform them of the scam and request a fraud alert on your accounts.",
+        "Change passwords for all online accounts, especially those related to finances and email. Use strong, unique passwords for each account.",
+        "Secure any devices used in communication with the scammer by changing login credentials and ensuring antivirus software is up-to-date.",
+        "Reach out to friends or family members you trust about your experience; they can provide support and help monitor for unusual activity."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report the scam to the Federal Trade Commission at reportfraud.ftc.gov, providing as much detail as possible including dates of contact and amounts sent.",
+        "Submit a complaint with the FBI's Internet Crime Complaint Center (IC3) at ic3.gov, which will help in tracking and potentially identifying the scammers.",
+        "Contact your local police department to file a report. This can be crucial for insurance claims or legal actions against the scammer.",
+        "File a report with your state\u2019s Attorney General office as they often have resources to assist victims of identity theft and fraud."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "If money was sent via gift cards, contact the relevant company (e.g., Walmart, Target) immediately to report fraudulent activity on your card numbers.",
+        "Freeze credit at all three bureaus: Equifax (equifax.com/personal/credit-report-services), Experian (experian.com/freeze), and TransUnion (transunion.com/credit-freeze). This prevents the scammer from opening new accounts in your name.",
+        "If you paid through a payment service, contact them to report fraud and request reimbursement if possible. Services like PayPal have policies for reversing transactions under certain conditions."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Review all accounts where personal information might have been compromised; close or secure any unauthorized accounts.",
+        "Consider signing up for a credit monitoring service to alert you of suspicious activity on your credit report.",
+        "Secure any shared access to your devices by changing passwords and ensuring security measures like two-factor authentication are in place."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "Recognize that these scammers are professionals who manipulate thousands of people; you were a target, not a fool.",
+        "Talk to someone you trust about what happened. Sharing your experience can help validate your feelings and provide emotional support.",
+        "Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free support and advice on dealing with fraud."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor your credit reports weekly at annualcreditreport.com to catch any unauthorized activity early.",
+        "Stay alert for follow-up scams targeting previous victims, such as requests for more money or offers of assistance that require payment.",
+        "Regularly check and update privacy settings on social media platforms where you may have shared personal information with the scammer."
+      ]
+    }
+  }
 }

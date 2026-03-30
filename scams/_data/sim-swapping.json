@@ -34,5 +34,56 @@
     "account-takeover",
     "phishing-schemes",
     "identity-theft"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your mobile carrier immediately to secure your SIM card and request a new one.",
+        "Change passwords for all accounts linked to the phone number, especially banking apps, email, social media, and any financial services.",
+        "Enable two-factor authentication (2FA) on all accounts if not already enabled. Preferably use authenticator apps over SMS-based 2FA.",
+        "Alert your bank and credit card issuers about potential fraud; they can monitor for unusual activity."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov, providing details of the SIM Swapping scam.",
+        "File with FBI IC3 at ic3.gov by submitting a complaint form with comprehensive information.",
+        "Contact local police for a report number and provide them with all relevant documents including transaction records.",
+        "File with your state Attorney General's office to ensure that state-level law enforcement is aware of the fraud."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute unauthorized charges through your bank or credit card company immediately and request a refund.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent further fraud.",
+        "Consider enrolling in a credit monitoring service if you have not already done so."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If your phone number was used for account recovery, change the recovery email and add security questions to all accounts.",
+        "Check for any new accounts opened in your name by requesting a free credit report from annualcreditreport.com."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; you were targeted, not chosen because of personal weakness.",
+        "Talk to someone you trust about what happened to process your feelings and receive support.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from experts."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.",
+        "Watch for follow-up scams targeting previous victims, such as phishing emails or calls claiming they can help recover funds.",
+        "Update your mobile carrier with a new phone number if you decide not to reuse the compromised one."
+      ]
+    }
+  }
 }

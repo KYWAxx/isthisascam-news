@@ -34,5 +34,56 @@
     "medical-supply-scams",
     "health-insurance-fraud",
     "elderly-financial-exploitation"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card issuers to inform them of the scam and request a fraud alert on your accounts.",
+        "If you sent money via gift cards, contact the gift card company immediately to report the fraudulent transactions. Provide any transaction numbers or serial codes from the stolen cards.",
+        "Change passwords for any Medicare-related online accounts, as scammers may have obtained personal information.",
+        "Secure any devices that were accessed remotely by changing passwords and installing updated security software."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report the scam to the Federal Trade Commission at reportfraud.ftc.gov, providing details of your interaction with the scammers.",
+        "Submit a complaint to the FBI's Internet Crime Complaint Center (IC3) at ic3.gov to assist in tracking and prosecuting fraudsters.",
+        "Contact local police for a report number; this can be crucial if you need to prove that you were a victim of fraud.",
+        "File a report with your state Attorney General\u2019s office, as they often have specialized units dealing with consumer protection."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any unauthorized charges on your bank and credit card statements. Provide documentation of the scam for faster resolution.",
+        "Freeze your credit at all three bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent new accounts from being opened in your name.",
+        "Contact Medicare directly to ensure that no fraudulent claims have been made under your name or Social Security number."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If personal information like your Social Security number was compromised, consider enrolling in a credit monitoring service through one of the major bureaus.",
+        "Check for signs that your Medicare account has been accessed or used fraudulently; this includes reviewing all statements and contacting Medicare directly."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people. Remember, you were targeted because of their skills, not your mistakes.",
+        "Talk to someone you trust about what happened; sharing the experience can help alleviate feelings of shame or embarrassment.",
+        "Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free support and guidance on how to deal with identity theft."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor your credit reports weekly at annualcreditreport.com for any signs of unauthorized activity.",
+        "Watch out for follow-up scams targeting previous victims; scammers often exploit victims again by posing as law enforcement or recovery services.",
+        "Continue to review Medicare statements and contact Medicare directly if you notice anything suspicious."
+      ]
+    }
+  }
 }

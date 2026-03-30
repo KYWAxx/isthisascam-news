@@ -34,5 +34,55 @@
     "emergency-fraud",
     "identity-theft",
     "investment-scam"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and credit card companies immediately to inform them of the scam.",
+        "Change passwords for any accounts you may have shared or accessed during the scam, especially if you used a single password across multiple sites.",
+        "Alert any charities you support regularly about the fraud attempt to prevent future incidents."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov detailing how much money was lost and any personal information that may have been compromised.",
+        "File with FBI IC3 at ic3.gov, providing them with the contact details of the scammer if available.",
+        "Contact local police for a formal report number which can be useful in insurance claims or future fraud prevention efforts.",
+        "File with your state Attorney General's office as they often have specific units dedicated to consumer protection and fraud."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "If you sent money via a gift card, contact the company immediately to request a reversal or refund of the transaction.",
+        "Freeze your credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent potential identity theft from this scam.",
+        "Consider setting up fraud alerts on your credit reports for an additional layer of security."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If you shared sensitive personal information like Social Security number or bank account details, monitor these accounts closely and consider contacting the appropriate services (like banks) to secure your data.",
+        "Check for any signs of identity theft by reviewing recent transactions and statements for unfamiliar activity."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people, often through emotional appeals. Remember that you were targeted because the scam was designed to trick you.",
+        "Talk to someone you trust about what happened; sharing your experience can help ease feelings of isolation and shame.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance on how to move forward."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com for any unusual activity or signs of fraud.",
+        "Watch for follow-up scams targeting previous victims, such as fake recovery services asking for additional payments to 'recover' your lost funds.",
+        "Stay informed about new charity scam tactics and share this information with friends and family to prevent them from falling victim."
+      ]
+    }
+  }
 }

@@ -34,5 +34,56 @@
     "tech-support-scammers-target-elderly",
     "how-to-spot-and-prevent-tech-support-fraud",
     "the-rise-of-gift-card-scams-in-2023"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Disconnect your computer from the internet and power off to prevent further unauthorized access.",
+        "Contact your bank or credit card company immediately if you provided financial information. Request a block on any transactions made by the scammer and consider closing compromised accounts.",
+        "Change passwords for all online accounts, especially those related to banking, email, and social media, using strong, unique passwords.",
+        "Run a full antivirus scan on your computer using trusted software such as Malwarebytes or Norton. If you don't have one installed, download it from the official website."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov providing details of the scam including dates and any amounts involved.",
+        "File a complaint with FBI IC3 at ic3.gov, giving them all pertinent information about your encounter.",
+        "Contact your local police department for a case number, which can be helpful if you need to provide proof of fraud later on.",
+        "File a report with your state Attorney General's office, as they often have consumer protection units that deal specifically with such scams."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "If you paid via gift cards, contact the company to see if there are any steps for reimbursement or reporting fraudulent use.",
+        "Freeze your credit at all three bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.",
+        "Set up fraud alerts with each of the credit reporting agencies and request a free credit report from annualcreditreport.com to check for any unauthorized activity."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If you shared personal information like your Social Security number or date of birth, monitor your credit reports and consider enrolling in an identity theft protection service.",
+        "Consider filing a report with the IRS to prevent tax-related identity theft if sensitive financial details were compromised."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "Remember that tech support scams are designed to intimidate and confuse you, making it easier for scammers to exploit your fears.",
+        "Reach out to a trusted friend or family member to talk about what happened. Sharing your experience can help alleviate feelings of shame or embarrassment.",
+        "Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free support and resources."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor your credit reports weekly at annualcreditreport.com to spot any unauthorized activity early.",
+        "Be vigilant for follow-up scams that might target previous victims, and report any suspicious contacts to the FTC or IC3.",
+        "Consider using a password manager to create strong passwords for all of your accounts, and enable two-factor authentication wherever possible."
+      ]
+    }
+  }
 }

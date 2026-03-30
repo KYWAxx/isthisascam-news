@@ -62,6 +62,22 @@
   .related-card { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
   .related-card:hover { border-color: var(--blue); }
 
+  .action-plan { margin-top: 16px; }
+  .ap-phase { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .ap-phase-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ap-phase-header:hover { background: #E0EDFF; }
+  .ap-phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .ap-phase-title { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .ap-phase-body { padding: 20px 24px; }
+  .ap-phase-body li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }
+  .ap-phase-body li:last-child { border-bottom: none; }
+  .ap-check { color: var(--blue); flex-shrink: 0; }
+  .ap-emotional { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header:hover { background: #FDE68A; }
+  .ap-emotional .ap-phase-num { background: var(--amber); }
+  .ap-emotional .ap-check { color: var(--amber); }
+
   .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
   .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
   .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
@@ -92,6 +108,7 @@
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -104,7 +121,7 @@
 <article class="article">
   <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scams/">Scam Library</a> &rsaquo; Government Grant Scams</div>
 
-  <div class="article-icon">🏛️</div>
+  <div class="article-icon">📋</div>
   <h1>Government Grant Scams</h1>
 
   <h2 class="section-heading">What is this scam?</h2>
@@ -132,14 +149,51 @@
 
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    <li><span class="action-icon">✅</span> Contact the local office of the government agency mentioned to verify the claim</li>
-<li><span class="action-icon">✅</span> Report any suspicious activity to the FTC at IdentityTheft.gov</li>
-<li><span class="action-icon">✅</span> Do not provide personal or financial information unless you initiated contact</li>
-<li><span class="action-icon">✅</span> Share this information with family and friends who may be vulnerable</li>
-
-  </ul>
+  <h2 class="section-heading">Victim recovery plan</h2>
+  <div class='action-plan'><div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">1</span><span class="ap-phase-title">First 24 Hours</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🚨</span> Contact your bank immediately to report any transactions made from your account due to the scam and request a fraud alert.</li>
+<li><span class="ap-check">🚨</span> Change passwords for all financial accounts, especially those related to banking or government services.</li>
+<li><span class="ap-check">🚨</span> If you provided sensitive information such as Social Security number or passport details, inform relevant agencies like the IRS or State Department about potential misuse.</li>
+<li><span class="ap-check">🚨</span> Document every interaction with the scammers including dates, times, and any payment methods used.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">2</span><span class="ap-phase-title">File Reports</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📝</span> Report to FTC at reportfraud.ftc.gov to document the scam and help protect others from similar frauds.</li>
+<li><span class="ap-check">📝</span> File with FBI IC3 at ic3.gov, providing detailed information about your interaction with the scammers and any financial loss incurred.</li>
+<li><span class="ap-check">📝</span> Contact local police for a report number; this can be useful if you need to provide documentation of the incident later on.</li>
+<li><span class="ap-check">📝</span> File with your state Attorney General&#x27;s office, as they may have additional resources or reporting mechanisms specific to your region.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">3</span><span class="ap-phase-title">Financial Recovery</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💳</span> Dispute any charges made due to the scam with your bank. Provide them with all documentation you have collected.</li>
+<li><span class="ap-check">💳</span> Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent further misuse of your identity.</li>
+<li><span class="ap-check">💳</span> If gift cards were used as a payment method, contact the issuing company immediately to report fraud and request assistance in recovering funds.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">4</span><span class="ap-phase-title">Protect Your Identity</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🔒</span> Consider signing up for an identity theft protection service if you provided significant personal information.</li>
+<li><span class="ap-check">🔒</span> If any government documents were compromised, contact the relevant agencies (e.g., Social Security Administration or Department of Motor Vehicles) to alert them about potential misuse and request further guidance.</li>
+</ul></div>
+</div>
+<div class="ap-phase ap-emotional">
+  <div class="ap-phase-header"><span class="ap-phase-num">5</span><span class="ap-phase-title">It&#x27;s Not Your Fault</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💛</span> These scammers are professionals who manipulate thousands of people; remember, the fault lies with the scammer.</li>
+<li><span class="ap-check">💛</span> Talk to someone you trust about what happened. Sharing your experience can help in processing the emotional impact.</li>
+<li><span class="ap-check">💛</span> Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance specific to older adults who may feel particularly targeted by such scams.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">6</span><span class="ap-phase-title">Follow-Up (Weeks 2-8)</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📋</span> Monitor credit reports weekly at annualcreditreport.com for any unauthorized activity.</li>
+<li><span class="ap-check">📋</span> Watch for follow-up scams targeting previous victims, as scammers often target those who have previously fallen for a scam.</li>
+<li><span class="ap-check">📋</span> Continue to monitor your bank accounts and financial statements closely for the next several months for signs of fraudulent activity.</li>
+</ul></div>
+</div>
+</div>
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

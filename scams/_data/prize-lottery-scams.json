@@ -34,5 +34,56 @@
     "investment-scam",
     "romance-scam",
     "tech-support-fraud"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank or financial institution to report unauthorized transactions and request a fraud alert on your accounts.",
+        "If you sent money via gift cards, contact the company immediately (e.g., Walmart for MoneyPaks) to inform them of the fraudulent transaction; they may offer guidance on how to proceed with recovery efforts.",
+        "Change passwords for any online accounts that you think might have been compromised during the scam, especially financial and email accounts.",
+        "Notify your credit card issuer if you provided credit card information as part of the prize or lottery process."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov to document the scam and possibly assist in larger investigations.",
+        "File with FBI IC3 at ic3.gov for additional reporting, especially if there are international elements involved.",
+        "Contact local police for a report number; this can be helpful when dealing with financial institutions or insurance claims.",
+        "File with your state Attorney General to inform them of the scam and possibly join any ongoing investigations."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute unauthorized charges with your credit card company; provide documentation of all transactions related to the scam.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent any further fraudulent activity.",
+        "Consider setting up fraud alerts with your bank and financial institutions; this can help monitor for unusual activity."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If you shared sensitive information like Social Security number, dates of birth, or addresses during the scam, immediately contact the three major credit bureaus to place a fraud alert on your report.",
+        "Check for any new accounts opened in your name by requesting free credit reports from annualcreditreport.com."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; you are not alone, and it is common to feel a sense of betrayal or shame.",
+        "Talk to someone you trust about what happened; sharing your experience can be healing and help you process the emotional impact of the scam.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance on how to recover from a lottery or prize scam."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com for any new fraudulent activity.",
+        "Watch for follow-up scams targeting previous victims, such as calls asking for more money to unlock a prize or additional documents required for verification.",
+        "Continue to change passwords on a regular basis and enable two-factor authentication wherever possible."
+      ]
+    }
+  }
 }

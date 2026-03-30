@@ -62,6 +62,22 @@
   .related-card { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
   .related-card:hover { border-color: var(--blue); }
 
+  .action-plan { margin-top: 16px; }
+  .ap-phase { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .ap-phase-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ap-phase-header:hover { background: #E0EDFF; }
+  .ap-phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .ap-phase-title { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .ap-phase-body { padding: 20px 24px; }
+  .ap-phase-body li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }
+  .ap-phase-body li:last-child { border-bottom: none; }
+  .ap-check { color: var(--blue); flex-shrink: 0; }
+  .ap-emotional { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header:hover { background: #FDE68A; }
+  .ap-emotional .ap-phase-num { background: var(--amber); }
+  .ap-emotional .ap-check { color: var(--amber); }
+
   .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
   .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
   .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
@@ -92,6 +108,7 @@
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -104,7 +121,7 @@
 <article class="article">
   <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scams/">Scam Library</a> &rsaquo; Prize &amp; Lottery Scams</div>
 
-  <div class="article-icon">🎰</div>
+  <div class="article-icon">📋</div>
   <h1>Prize &amp; Lottery Scams</h1>
 
   <h2 class="section-heading">What is this scam?</h2>
@@ -132,14 +149,51 @@
 
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    <li><span class="action-icon">✅</span> Contact a local consumer protection agency if you suspect a scam.</li>
-<li><span class="action-icon">✅</span> Notify your financial institution to monitor for any fraudulent activity on accounts.</li>
-<li><span class="action-icon">✅</span> Report the incident to the FTC at IdentityTheft.gov and the FBI&#x27;s IC3 website.</li>
-<li><span class="action-icon">✅</span> Educate yourself and loved ones about common scams through resources like BBB.org.</li>
-
-  </ul>
+  <h2 class="section-heading">Victim recovery plan</h2>
+  <div class='action-plan'><div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">1</span><span class="ap-phase-title">First 24 Hours</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🚨</span> Contact your bank or financial institution to report unauthorized transactions and request a fraud alert on your accounts.</li>
+<li><span class="ap-check">🚨</span> If you sent money via gift cards, contact the company immediately (e.g., Walmart for MoneyPaks) to inform them of the fraudulent transaction; they may offer guidance on how to proceed with recovery efforts.</li>
+<li><span class="ap-check">🚨</span> Change passwords for any online accounts that you think might have been compromised during the scam, especially financial and email accounts.</li>
+<li><span class="ap-check">🚨</span> Notify your credit card issuer if you provided credit card information as part of the prize or lottery process.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">2</span><span class="ap-phase-title">File Reports</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📝</span> Report to FTC at reportfraud.ftc.gov to document the scam and possibly assist in larger investigations.</li>
+<li><span class="ap-check">📝</span> File with FBI IC3 at ic3.gov for additional reporting, especially if there are international elements involved.</li>
+<li><span class="ap-check">📝</span> Contact local police for a report number; this can be helpful when dealing with financial institutions or insurance claims.</li>
+<li><span class="ap-check">📝</span> File with your state Attorney General to inform them of the scam and possibly join any ongoing investigations.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">3</span><span class="ap-phase-title">Financial Recovery</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💳</span> Dispute unauthorized charges with your credit card company; provide documentation of all transactions related to the scam.</li>
+<li><span class="ap-check">💳</span> Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent any further fraudulent activity.</li>
+<li><span class="ap-check">💳</span> Consider setting up fraud alerts with your bank and financial institutions; this can help monitor for unusual activity.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">4</span><span class="ap-phase-title">Protect Your Identity</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🔒</span> If you shared sensitive information like Social Security number, dates of birth, or addresses during the scam, immediately contact the three major credit bureaus to place a fraud alert on your report.</li>
+<li><span class="ap-check">🔒</span> Check for any new accounts opened in your name by requesting free credit reports from annualcreditreport.com.</li>
+</ul></div>
+</div>
+<div class="ap-phase ap-emotional">
+  <div class="ap-phase-header"><span class="ap-phase-num">5</span><span class="ap-phase-title">It&#x27;s Not Your Fault</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💛</span> These scammers are professionals who manipulate thousands of people; you are not alone, and it is common to feel a sense of betrayal or shame.</li>
+<li><span class="ap-check">💛</span> Talk to someone you trust about what happened; sharing your experience can be healing and help you process the emotional impact of the scam.</li>
+<li><span class="ap-check">💛</span> Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance on how to recover from a lottery or prize scam.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">6</span><span class="ap-phase-title">Follow-Up (Weeks 2-8)</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📋</span> Monitor credit reports weekly at annualcreditreport.com for any new fraudulent activity.</li>
+<li><span class="ap-check">📋</span> Watch for follow-up scams targeting previous victims, such as calls asking for more money to unlock a prize or additional documents required for verification.</li>
+<li><span class="ap-check">📋</span> Continue to change passwords on a regular basis and enable two-factor authentication wherever possible.</li>
+</ul></div>
+</div>
+</div>
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

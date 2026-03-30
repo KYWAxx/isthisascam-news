@@ -34,5 +34,56 @@
     "imposter-scams",
     "tech-support-fraud",
     "grandparent-scam"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact the gift card companies immediately and report the cards as stolen or compromised.",
+        "Save all receipts, emails, and text messages related to the scam for future reference.",
+        "Notify your bank about the situation in case any funds were transferred directly from your accounts.",
+        "Change passwords on all online accounts where you used similar credentials."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov to help track and combat scammers.",
+        "File with FBI IC3 at ic3.gov providing details of the scam including gift card numbers if applicable.",
+        "Contact local police for a report number, which can be useful for insurance claims or other legal actions.",
+        "File with your state Attorney General's office as they often have resources to help victims."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute charges on any gift cards you purchased by contacting the card issuer directly; provide them with proof of purchase and report.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.",
+        "Consider signing up for a credit monitoring service through your bank or financial institution."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Review all accounts that may have been compromised and secure them by changing passwords and enabling two-factor authentication where possible.",
+        "Watch for unusual activity in your credit reports or on banking statements, indicating potential identity theft."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; you were targeted because of their tactics.",
+        "Talk to someone you trust about what happened and how it makes you feel, sharing can be a relief.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from trained professionals."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to watch for any unauthorized activity.",
+        "Watch for follow-up scams targeting previous victims, staying vigilant can prevent further losses.",
+        "Regularly update your security measures such as software updates and antivirus protection on all devices."
+      ]
+    }
+  }
 }

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scams On The Rise Right Now | Is This a Scam?</title>
+<meta name="description" content="See which scams are most active right now. Real-time threat levels based on FTC and FBI IC3 data.">
+<meta property="og:title" content="Scams On The Rise Right Now | Is This a Scam?">
+<meta property="og:description" content="Which scams are surging? Check current threat levels backed by federal data.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A; --blue: #2563EB; --blue-light: #EFF6FF;
+    --amber: #D97706; --amber-light: #FEF3C7;
+    --red: #DC2626; --red-light: #FEF2F2;
+    --green: #059669; --green-light: #ECFDF5;
+    --bg: #F8F9FA; --white: #FFFFFF; --text: #1B2A4A;
+    --text-secondary: #4B5563; --border: #E5E7EB;
+    --serif: 'Merriweather', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; }
+
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
+  .nav-shield { font-size: 24px; } .nav-name { font-family: var(--serif); font-size: 18px; font-weight: 900; }
+  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+  .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--blue); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-weight: 600 !important; }
+  .nav-hamburger { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+
+  .page-header { background: var(--white); padding: 60px 40px 48px; border-bottom: 1px solid var(--border); }
+  .page-header-inner { max-width: 1100px; margin: 0 auto; }
+  .page-label { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+  .page-header h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 42px); font-weight: 900; color: var(--navy); margin-bottom: 12px; line-height: 1.2; }
+  .page-header p { font-size: 17px; color: var(--text-secondary); max-width: 600px; line-height: 1.7; }
+  .updated { font-size: 13px; color: #9CA3AF; margin-top: 12px; }
+
+  .content { max-width: 1100px; margin: 0 auto; padding: 40px; }
+
+  /* ── Chart ── */
+  .chart-section { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 40px; }
+  .chart-title { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .chart-subtitle { font-size: 13px; color: #9CA3AF; margin-bottom: 24px; }
+  .chart-wrap { position: relative; width: 100%; height: 360px; }
+
+  /* ── Threat cards ── */
+  .threat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 48px; }
+
+  .threat-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; transition: box-shadow 0.2s; text-decoration: none; color: var(--text); }
+  .threat-card:hover { box-shadow: 0 6px 24px rgba(27,42,74,0.08); }
+
+  .threat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .threat-icon { font-size: 28px; }
+  .threat-level { padding: 4px 12px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .level-high { background: var(--red-light); color: var(--red); }
+  .level-medium { background: var(--amber-light); color: var(--amber); }
+  .level-rising { background: #FDF4FF; color: #9333EA; }
+
+  .threat-card h3 { font-family: var(--serif); font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .threat-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; flex: 1; }
+  .threat-stat { margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--navy); }
+  .threat-stat span { color: var(--red); }
+  .threat-arrow { margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--blue); }
+
+  /* ── Sources ── */
+  .sources { background: var(--blue-light); border-radius: 12px; padding: 24px 32px; margin-bottom: 48px; }
+  .sources h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .sources p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+  .sources a { color: var(--blue); }
+
+  /* ── CTA ── */
+  .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-bottom: 40px; }
+  .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
+  .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
+  .cta-form { display: flex; gap: 12px; max-width: 420px; margin: 0 auto; }
+  .cta-form input { flex: 1; padding: 12px 18px; border: 2px solid rgba(255,255,255,0.2); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--white); font-family: var(--sans); font-size: 14px; outline: none; }
+  .cta-form input::placeholder { color: rgba(255,255,255,0.4); }
+  .cta-form input:focus { border-color: var(--blue); }
+  .cta-form button { padding: 12px 24px; background: var(--blue); color: var(--white); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-family: var(--sans); white-space: nowrap; }
+  .cta-success { display: none; color: #34D399; font-weight: 600; margin-top: 12px; }
+  .cta-error { display: none; color: #FCA5A5; font-size: 14px; margin-top: 8px; }
+
+  footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; font-size: 13px; color: #9CA3AF; }
+  footer a { color: var(--blue); text-decoration: none; }
+
+  @media (max-width: 768px) {
+    .nav { padding: 14px 20px; } .nav-links { display: none; } .nav-hamburger { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; border-bottom: 1px solid var(--border); gap: 16px; }
+    .page-header { padding: 40px 20px 32px; } .content { padding: 24px 20px; }
+    .threat-grid { grid-template-columns: 1fr; }
+    .chart-wrap { height: 280px; }
+    .cta-form { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
+    <li><a href="/scams/">Scam Library</a></li>
+    <li><a href="/#signup">Newsletter</a></li>
+    <li><a href="/checklist.pdf">Checklist</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#signup" class="nav-cta">Get Free Alerts</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="page-label">Trending Threats</div>
+    <h1>Scams on the rise right now</h1>
+    <p>Which scams are surging? Current threat levels based on FTC complaint data and FBI IC3 reports.</p>
+    <p class="updated">Last updated: March 2026 &middot; Sources: FTC Consumer Sentinel, FBI IC3 2024 Report</p>
+  </div>
+</header>
+
+<div class="content">
+
+  <!-- ── Chart ── -->
+  <div class="chart-section">
+    <div class="chart-title">Reported losses by scam type</div>
+    <div class="chart-subtitle">Total consumer losses reported to FTC &amp; FBI IC3, 2024 (billions USD)</div>
+    <div class="chart-wrap">
+      <canvas id="lossChart"></canvas>
+    </div>
+  </div>
+
+  <!-- ── Threat Cards ── -->
+  <div class="threat-grid">
+    <a href="/scams/investment-crypto-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">📈</span>
+        <span class="threat-level level-high">High</span>
+      </div>
+      <h3>Investment &amp; Crypto Scams</h3>
+      <p>The #1 loss category. Fake investment platforms and crypto "opportunities" targeting all ages, with older adults losing the most per incident.</p>
+      <div class="threat-stat"><span>$4.57B</span> in reported losses (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/romance-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">💔</span>
+        <span class="threat-level level-high">High</span>
+      </div>
+      <h3>Romance Scams</h3>
+      <p>Fake online relationships designed to drain savings over weeks or months. Increasingly combined with investment scams ("pig butchering").</p>
+      <div class="threat-stat"><span>$1.14B</span> in reported losses (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/tech-support-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">🖥️</span>
+        <span class="threat-level level-high">High</span>
+      </div>
+      <h3>Tech Support Scams</h3>
+      <p>Pop-ups, phone calls, and emails claiming your computer is compromised. Adults 60+ account for the majority of victims and the highest losses.</p>
+      <div class="threat-stat"><span>$924M</span> in reported losses to adults 60+ (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/irs-ssa-impersonation" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">📋</span>
+        <span class="threat-level level-high">High</span>
+      </div>
+      <h3>Government Impersonation</h3>
+      <p>IRS, Social Security, Medicare — callers impersonate trusted agencies with spoofed numbers. The most common scam call older adults receive.</p>
+      <div class="threat-stat"><span>$789M</span> in reported losses (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/ai-voice-cloning-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">🤖</span>
+        <span class="threat-level level-rising">Rising</span>
+      </div>
+      <h3>AI Voice Cloning</h3>
+      <p>Criminals use AI to clone family members' voices from social media clips. Reports increased 300%+ year-over-year. Extremely hard to detect.</p>
+      <div class="threat-stat"><span>300%+</span> increase in reports (2024 vs 2023)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/grandparent-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">👵</span>
+        <span class="threat-level level-high">High</span>
+      </div>
+      <h3>Grandparent Scams</h3>
+      <p>"I'm in jail, I need bail money." Callers impersonate grandchildren in distress. Now supercharged by AI voice cloning technology.</p>
+      <div class="threat-stat"><span>$152M</span> in reported losses to adults 60+ (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/phishing-smishing" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">🎣</span>
+        <span class="threat-level level-medium">Medium</span>
+      </div>
+      <h3>Phishing &amp; Smishing</h3>
+      <p>Fake texts about package deliveries, bank alerts, and toll fees. The most common entry point for nearly every other scam type.</p>
+      <div class="threat-stat"><span>#1</span> most reported fraud contact method</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+
+    <a href="/scams/qr-code-scams" class="threat-card">
+      <div class="threat-top">
+        <span class="threat-icon">📲</span>
+        <span class="threat-level level-rising">Rising</span>
+      </div>
+      <h3>QR Code Scams</h3>
+      <p>Fake QR codes on parking meters, restaurant menus, and flyers redirect to credential-stealing sites. A newer threat growing rapidly.</p>
+      <div class="threat-stat"><span>587%</span> increase in quishing attacks (2024)</div>
+      <span class="threat-arrow">Full breakdown &rarr;</span>
+    </a>
+  </div>
+
+  <!-- ── Sources ── -->
+  <div class="sources">
+    <h3>Where this data comes from</h3>
+    <p>Loss figures are drawn from the <a href="https://www.ftc.gov/reports/data-spotlight" target="_blank" rel="noopener">FTC Consumer Sentinel Network</a> and the <a href="https://www.ic3.gov/AnnualReport" target="_blank" rel="noopener">FBI Internet Crime Complaint Center (IC3) 2024 Elder Fraud Report</a>. Threat levels are assessed based on year-over-year complaint volume, loss amounts, and targeting of adults 60+. "Rising" indicates scam types with the fastest growth rates, even if total loss volumes are still being quantified.</p>
+  </div>
+
+  <!-- ── CTA ── -->
+  <div class="cta-box">
+    <h3>Stay ahead of the latest scams</h3>
+    <p>We track what's trending every week so you don't have to. Free alerts, straight to your inbox.</p>
+    <form class="cta-form" onsubmit="event.preventDefault(); handleSignup();">
+      <input type="email" id="ctaEmail" placeholder="Your email address" required>
+      <button type="submit" id="ctaBtn">Subscribe Free</button>
+    </form>
+    <div class="cta-success" id="ctaSuccess">You're in! Check your inbox.</div>
+    <div class="cta-error" id="ctaError"></div>
+  </div>
+</div>
+
+<footer>
+  <a href="/">Is This a Scam?</a> &middot; <a href="/scams/">Scam Library</a> &middot; <a href="/#signup">Get free alerts</a>
+  <br>&copy; 2026 isthisascam.news
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script>
+  // ── Chart: Reported losses by scam type (FBI IC3 2024 data) ──
+  const ctx = document.getElementById('lossChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [
+        'Investment/\nCrypto',
+        'Romance',
+        'Tech\nSupport',
+        'Gov\'t\nImpersonation',
+        'Gift Card\nPayment',
+        'Grandparent\n/Emergency',
+        'Phishing/\nSmishing',
+        'Medicare\nFraud',
+        'Prize/\nLottery',
+        'Charity'
+      ],
+      datasets: [{
+        label: 'Reported losses (billions $)',
+        data: [4.57, 1.14, 0.92, 0.79, 0.54, 0.41, 0.37, 0.31, 0.28, 0.14],
+        backgroundColor: [
+          '#DC2626', '#DC2626', '#DC2626', '#DC2626',
+          '#D97706', '#D97706', '#D97706',
+          '#2563EB', '#2563EB', '#2563EB'
+        ],
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `$${ctx.raw}B in reported losses`
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: v => `$${v}B`,
+            font: { family: "'DM Sans', sans-serif", size: 12 },
+            color: '#9CA3AF',
+          },
+          grid: { color: '#F3F4F6' },
+          border: { display: false },
+        },
+        x: {
+          ticks: {
+            font: { family: "'DM Sans', sans-serif", size: 11 },
+            color: '#6B7280',
+            maxRotation: 0,
+          },
+          grid: { display: false },
+          border: { display: false },
+        }
+      }
+    }
+  });
+
+  // ── Signup ──
+  async function handleSignup() {
+    const email = document.getElementById('ctaEmail').value.trim();
+    const btn = document.getElementById('ctaBtn');
+    const ok = document.getElementById('ctaSuccess');
+    const err = document.getElementById('ctaError');
+    err.style.display = 'none'; ok.style.display = 'none';
+    if (!email || !email.includes('@')) { err.textContent = 'Please enter a valid email.'; err.style.display = 'block'; return; }
+    btn.disabled = true; btn.textContent = 'Sending...';
+    try {
+      const r = await fetch('https://signup.isthisascam.news/subscribe', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ email }) });
+      if (r.ok) { ok.style.display = 'block'; document.getElementById('ctaEmail').value = ''; btn.textContent = 'Subscribed!'; }
+      else throw new Error();
+    } catch (e) { err.textContent = 'Something went wrong.'; err.style.display = 'block'; btn.disabled = false; btn.textContent = 'Subscribe Free'; }
+  }
+</script>
+</body>
+</html>

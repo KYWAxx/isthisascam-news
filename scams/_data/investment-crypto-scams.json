@@ -34,5 +34,56 @@
     "romance-scams",
     "tech-support-fraud",
     "grandparent-scam"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank and any involved cryptocurrency exchanges to report fraudulent transactions and request a freeze on accounts if possible.",
+        "Change passwords for all financial, email, and social media accounts that may have been compromised. Use strong, unique passwords for each account.",
+        "If you provided remote access to the scammer, immediately secure your computer by changing login credentials, updating antivirus software, and running a full system scan.",
+        "Document everything: save emails, screenshots of messages, transaction records, and any other evidence related to the investment/crypto scam."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report the scam to the Federal Trade Commission (FTC) at reportfraud.ftc.gov for a recovery plan and legal advice.",
+        "Submit a complaint with the FBI\u2019s Internet Crime Complaint Center (IC3) at ic3.gov, providing detailed information about the transactions and communications involved in the scam.",
+        "Contact your local police department to file a formal report; ask them to provide you with a case number for future reference.",
+        "File a complaint with your state Attorney General's office if they have an online reporting system available."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any unauthorized transactions with your bank and cryptocurrency exchanges, providing them with the documentation you've collected.",
+        "Freeze credit at all three bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent further fraudulent activity in your name.",
+        "Consider signing up for a fraud alert service or identity theft protection if you suspect broader identity compromise."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "If personal information such as Social Security numbers, dates of birth, or passport details were shared, contact the relevant issuing authorities to notify them of potential misuse.",
+        "Change login credentials for all online platforms where you might have used compromised information."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; it\u2019s important to understand that their tactics are designed to deceive.",
+        "Talk to someone you trust about what happened. Sharing your experience can help process the emotional impact and seek support.",
+        "Contact the AARP Fraud Watch Network helpline at 877-908-3360 for free, confidential advice on recovering from fraud."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to catch any signs of identity theft early.",
+        "Watch out for follow-up scams targeting previous victims, such as offers to 'recover' your lost funds or requests for additional investments under false promises.",
+        "Continue to update passwords and monitor financial accounts closely for several months after the scam."
+      ]
+    }
+  }
 }

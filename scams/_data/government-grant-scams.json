@@ -34,5 +34,56 @@
     "stimulus-check-scams",
     "social-security-benefits-fraud",
     "investment-scam-alerts"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Contact your bank immediately to report any transactions made from your account due to the scam and request a fraud alert.",
+        "Change passwords for all financial accounts, especially those related to banking or government services.",
+        "If you provided sensitive information such as Social Security number or passport details, inform relevant agencies like the IRS or State Department about potential misuse.",
+        "Document every interaction with the scammers including dates, times, and any payment methods used."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov to document the scam and help protect others from similar frauds.",
+        "File with FBI IC3 at ic3.gov, providing detailed information about your interaction with the scammers and any financial loss incurred.",
+        "Contact local police for a report number; this can be useful if you need to provide documentation of the incident later on.",
+        "File with your state Attorney General's office, as they may have additional resources or reporting mechanisms specific to your region."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Dispute any charges made due to the scam with your bank. Provide them with all documentation you have collected.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent further misuse of your identity.",
+        "If gift cards were used as a payment method, contact the issuing company immediately to report fraud and request assistance in recovering funds."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Consider signing up for an identity theft protection service if you provided significant personal information.",
+        "If any government documents were compromised, contact the relevant agencies (e.g., Social Security Administration or Department of Motor Vehicles) to alert them about potential misuse and request further guidance."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "These scammers are professionals who manipulate thousands of people; remember, the fault lies with the scammer.",
+        "Talk to someone you trust about what happened. Sharing your experience can help in processing the emotional impact.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance specific to older adults who may feel particularly targeted by such scams."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com for any unauthorized activity.",
+        "Watch for follow-up scams targeting previous victims, as scammers often target those who have previously fallen for a scam.",
+        "Continue to monitor your bank accounts and financial statements closely for the next several months for signs of fraudulent activity."
+      ]
+    }
+  }
 }

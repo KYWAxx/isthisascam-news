@@ -62,6 +62,22 @@
   .related-card { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--white); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--navy); font-size: 14px; font-weight: 600; transition: border-color 0.2s; }
   .related-card:hover { border-color: var(--blue); }
 
+  .action-plan { margin-top: 16px; }
+  .ap-phase { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .ap-phase-header { display: flex; align-items: center; gap: 12px; padding: 18px 24px; background: var(--blue-light); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .ap-phase-header:hover { background: #E0EDFF; }
+  .ap-phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+  .ap-phase-title { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .ap-phase-body { padding: 20px 24px; }
+  .ap-phase-body li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 15px; color: var(--text-secondary); line-height: 1.7; list-style: none; display: flex; gap: 10px; align-items: flex-start; }
+  .ap-phase-body li:last-child { border-bottom: none; }
+  .ap-check { color: var(--blue); flex-shrink: 0; }
+  .ap-emotional { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header { background: var(--amber-light); }
+  .ap-emotional .ap-phase-header:hover { background: #FDE68A; }
+  .ap-emotional .ap-phase-num { background: var(--amber); }
+  .ap-emotional .ap-check { color: var(--amber); }
+
   .cta-box { background: var(--navy); border-radius: 12px; padding: 40px; text-align: center; margin-top: 48px; }
   .cta-box h3 { font-family: var(--serif); font-size: 24px; color: var(--white); margin-bottom: 12px; }
   .cta-box p { color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 15px; }
@@ -92,6 +108,7 @@
   <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
     <li><a href="/scams/">Scam Library</a></li>
     <li><a href="/#signup">Newsletter</a></li>
     <li><a href="/checklist.pdf">Checklist</a></li>
@@ -104,7 +121,7 @@
 <article class="article">
   <div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/scams/">Scam Library</a> &rsaquo; Grandparent Scams</div>
 
-  <div class="article-icon">👵</div>
+  <div class="article-icon">📋</div>
   <h1>Grandparent Scams</h1>
 
   <h2 class="section-heading">What is this scam?</h2>
@@ -132,14 +149,51 @@
 
   </ul>
 
-  <h2 class="section-heading">What to do if you're targeted</h2>
-  <ul class="actions-list">
-    <li><span class="action-icon">✅</span> Verify the identity of the caller by asking specific questions that only your grandchild would know.</li>
-<li><span class="action-icon">✅</span> Hang up and contact the alleged &#x27;grandchild&#x27; or their parents directly through known phone numbers or social media to confirm the situation.</li>
-<li><span class="action-icon">✅</span> Report any suspicious calls to local law enforcement and the Federal Trade Commission (FTC) at ftc.gov/complaint.</li>
-<li><span class="action-icon">✅</span> Educate family members about common scam tactics and encourage them to be cautious of unsolicited requests for money.</li>
-
-  </ul>
+  <h2 class="section-heading">Victim recovery plan</h2>
+  <div class='action-plan'><div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">1</span><span class="ap-phase-title">First 24 Hours</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🚨</span> Contact your bank and credit card issuers to report the fraud and request they freeze any accounts involved in the scam.</li>
+<li><span class="ap-check">🚨</span> If you sent money via gift cards, contact the issuing company immediately. For example, if it was a Walmart or Target gift card, call their customer service (Walmart: 1-800-339-9745, Target: 1-800-846-2334) to report the fraud.</li>
+<li><span class="ap-check">🚨</span> If you provided any personal information, monitor your bank statements and credit reports for any unusual activity.</li>
+<li><span class="ap-check">🚨</span> Secure any devices used during the scam by changing passwords and updating security software.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">2</span><span class="ap-phase-title">File Reports</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📝</span> Report to FTC at reportfraud.ftc.gov, providing details of how you were contacted and what information was compromised.</li>
+<li><span class="ap-check">📝</span> File with FBI IC3 at ic3.gov to provide additional details that may help law enforcement track the scammer.</li>
+<li><span class="ap-check">📝</span> Contact local police for a report number; bring any emails or phone records as evidence.</li>
+<li><span class="ap-check">📝</span> File with your state Attorney General’s office, as they often have consumer protection units.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">3</span><span class="ap-phase-title">Financial Recovery</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💳</span> Dispute charges on your credit card statements and request a refund for any money sent via gift cards.</li>
+<li><span class="ap-check">💳</span> Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent identity theft.</li>
+<li><span class="ap-check">💳</span> Consider setting up fraud alerts with your financial institutions and monitor your accounts for unauthorized transactions.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">4</span><span class="ap-phase-title">Protect Your Identity</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">🔒</span> Change passwords on any compromised accounts, especially if the scammer may have accessed personal information or login credentials.</li>
+<li><span class="ap-check">🔒</span> If sensitive documents like Social Security numbers were shared, consider placing a fraud alert with credit bureaus.</li>
+</ul></div>
+</div>
+<div class="ap-phase ap-emotional">
+  <div class="ap-phase-header"><span class="ap-phase-num">5</span><span class="ap-phase-title">It&#x27;s Not Your Fault</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">💛</span> These scammers are professionals who manipulate thousands of people; you are not alone.</li>
+<li><span class="ap-check">💛</span> Talk to someone you trust about what happened, such as a family member or close friend.</li>
+<li><span class="ap-check">💛</span> Contact the AARP Fraud Watch helpline at 877-908-3360 for free support and guidance.</li>
+</ul></div>
+</div>
+<div class="ap-phase">
+  <div class="ap-phase-header"><span class="ap-phase-num">6</span><span class="ap-phase-title">Follow-Up (Weeks 2-8)</span></div>
+  <div class="ap-phase-body"><ul><li><span class="ap-check">📋</span> Monitor credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.</li>
+<li><span class="ap-check">📋</span> Watch for follow-up scams targeting previous victims, staying vigilant against further manipulation.</li>
+<li><span class="ap-check">📋</span> Continue changing passwords and updating security measures on your devices.</li>
+</ul></div>
+</div>
+</div>
 
   <h2 class="section-heading">How scammers find you</h2>
   <ul class="entry-list">

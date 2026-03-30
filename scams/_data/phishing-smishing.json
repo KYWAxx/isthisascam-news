@@ -34,5 +34,56 @@
     "identity-theft-protection",
     "tech-support-scams",
     "grandparent-scam"
-  ]
+  ],
+  "action_plan": {
+    "immediate": {
+      "title": "First 24 Hours",
+      "steps": [
+        "Change passwords for all accounts that may have been compromised or accessed through phishing emails, especially financial and email accounts.",
+        "Enable two-factor authentication (2FA) on all your online accounts to add an extra layer of security.",
+        "Run a full system scan using reputable antivirus software to check if your device has been infected by malware from the phishing link.",
+        "Disconnect any devices that were connected to the compromised network and perform a factory reset, then reinstall necessary applications."
+      ]
+    },
+    "reporting": {
+      "title": "File Reports",
+      "steps": [
+        "Report to FTC at reportfraud.ftc.gov for comprehensive documentation and assistance in tracking fraud.",
+        "File with FBI IC3 at ic3.gov to provide detailed information about the phishing or smishing scam.",
+        "Contact local police for a report number, which can be useful if financial losses are involved.",
+        "File with your state Attorney General to ensure that state-level resources are aware of and can assist in addressing the scam."
+      ]
+    },
+    "financial": {
+      "title": "Financial Recovery",
+      "steps": [
+        "Contact banks or credit card companies immediately to freeze any unauthorized transactions made through phishing.",
+        "Freeze credit at all 3 bureaus (Equifax: equifax.com/personal/credit-report-services, Experian: experian.com/freeze, TransUnion: transunion.com/credit-freeze) to prevent new account fraud.",
+        "If gift cards were used, contact the issuing company immediately to report the fraudulent transactions."
+      ]
+    },
+    "identity": {
+      "title": "Protect Your Identity",
+      "steps": [
+        "Notify major credit bureaus and request a fraud alert if any personal information (like SSN) was compromised.",
+        "If you suspect identity theft, consider setting up a fraud alert or a credit freeze to prevent new accounts from being opened in your name."
+      ]
+    },
+    "emotional": {
+      "title": "It's Not Your Fault",
+      "steps": [
+        "Remember that these scammers are professionals who manipulate thousands of people; you were not at fault for falling victim.",
+        "Talk to someone you trust about what happened. Sharing your experience can help you process and move forward.",
+        "Contact the AARP Fraud Watch helpline at 877-908-3360 for free support from trained volunteers who understand scams."
+      ]
+    },
+    "followup": {
+      "title": "Follow-Up (Weeks 2-8)",
+      "steps": [
+        "Monitor credit reports weekly at annualcreditreport.com to catch any new fraudulent activity early.",
+        "Watch for follow-up scams targeting previous victims, often asking for more information or money under false pretenses.",
+        "Regularly review bank statements and account activities online for signs of unauthorized transactions."
+      ]
+    }
+  }
 }
