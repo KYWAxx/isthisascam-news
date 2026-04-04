@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Is This a Scam?</title>
+<meta name="description" content="Support Is This a Scam? — a free community resource fighting fraud one family at a time.">
+<meta property="og:title" content="Support Is This a Scam?">
+<meta property="og:description" content="Help keep this free scam prevention resource running for families everywhere.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isthisascam.news/support">
+<meta property="og:image" content="https://isthisascam.news/og-image.png">
+<link rel="canonical" href="https://isthisascam.news/support">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --navy-light: #2D3E5F;
+    --blue: #2563EB;
+    --blue-light: #EFF6FF;
+    --amber: #D97706;
+    --amber-light: #FEF3C7;
+    --bg: #F8F9FA;
+    --white: #FFFFFF;
+    --text: #1B2A4A;
+    --text-secondary: #4B5563;
+    --border: #E5E7EB;
+    --serif: 'Merriweather', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* ── Nav ── */
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
+  .nav-shield { font-size: 24px; }
+  .nav-name { font-family: var(--serif); font-size: 18px; font-weight: 900; }
+  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+  .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--blue); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-weight: 600 !important; transition: background 0.2s !important; }
+  .nav-cta:hover { background: #1D4ED8 !important; }
+  .nav-hamburger { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+
+  /* ── Content ── */
+  .content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 24px 100px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .content p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+
+  .support-btn {
+    display: inline-block;
+    background: var(--amber);
+    color: var(--white);
+    text-decoration: none;
+    padding: 18px 48px;
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 18px;
+    font-weight: 700;
+    transition: background 0.2s;
+  }
+
+  .support-btn:hover { background: #B45309; }
+
+  .other-ways {
+    margin-top: 64px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+
+  .other-ways h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .other-ways p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  /* ── Footer ── */
+  footer { background: var(--white); border-top: 1px solid var(--border); padding: 48px 40px; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; }
+  .footer-brand { font-family: var(--serif); font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .footer-tagline { font-size: 13px; color: var(--text-secondary); max-width: 280px; }
+  .footer-links { display: flex; gap: 48px; }
+  .footer-col h5 { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 12px; }
+  .footer-col a { display: block; font-size: 14px; color: var(--text-secondary); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blue); }
+  .footer-bottom { max-width: 1100px; margin: 24px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: #9CA3AF; text-align: center; }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; border-bottom: 1px solid var(--border); gap: 16px; }
+    .content { padding: 48px 20px 64px; }
+    footer { padding: 32px 20px; }
+    .footer-inner { flex-direction: column; gap: 32px; }
+    .footer-links { flex-direction: column; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
+    <li><a href="/scams/">Scam Library</a></li>
+    <li><a href="/check">Scam Checker</a></li>
+    <li><a href="/protect">Protect Yourself</a></li>
+    <li><a href="/#signup">Newsletter</a></li>
+    <li><a href="/checklist.pdf">Checklist</a></li>
+    <li><a href="/kit" class="nav-cta">Free Kit</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+</nav>
+
+<div class="content">
+  <h1>Support Is This a Scam?</h1>
+  <p>This site is a free community resource run by one person. Every scam alert, every library page, every weekly newsletter — all free, no ads, no sponsors. If this project has helped you or your family, consider supporting it.</p>
+  <a href="https://buymeacoffee.com/isthisascam" class="support-btn" target="_blank" rel="noopener">Buy Me a Coffee</a>
+
+  <div class="other-ways">
+    <h2>Other ways to help</h2>
+    <p>Forward the newsletter to someone who needs it. Share a scam library page on social media. Tell your friends about the scam checker tool. Every share puts this information in front of someone who might need it before it's too late.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🛡️ Is This a Scam?</div>
+      <p class="footer-tagline">A free weekly fraud alert for anyone who wants to protect the people they love from scams.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="/">Home</a>
+        <a href="/scams/">Scam Library</a>
+        <a href="/#signup">Newsletter</a>
+        <a href="/checklist.pdf">Checklist</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">Report Fraud (FTC)</a>
+        <a href="https://www.ic3.gov" target="_blank" rel="noopener">FBI IC3</a>
+        <a href="https://www.identitytheft.gov" target="_blank" rel="noopener">IdentityTheft.gov</a>
+        <a href="/support">Support This Project</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 isthisascam.news &middot; Not affiliated with any government agency. &middot; Built to protect families.
+  </div>
+</footer>
+
+</body>
+</html>
