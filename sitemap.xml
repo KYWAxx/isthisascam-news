@@ -3,6 +3,7 @@
   <url><loc>https://isthisascam.news/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://isthisascam.news/scams/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://isthisascam.news/scams/trending</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://isthisascam.news/check</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://isthisascam.news/protect</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://isthisascam.news/scams/government-grant-scams</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://isthisascam.news/scams/grandparent-scams</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

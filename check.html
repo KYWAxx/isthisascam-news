@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scam Checker — Is This a Scam?</title>
+<meta name="description" content="Paste a suspicious email, text message, or phone script and get an instant scam analysis. Free tool by Is This a Scam?">
+<meta property="og:title" content="Scam Checker — Is This a Scam?">
+<meta property="og:description" content="Paste a suspicious message and get an instant scam analysis. Free, no signup required.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isthisascam.news/check">
+<meta property="og:image" content="https://isthisascam.news/og-image.png">
+<link rel="canonical" href="https://isthisascam.news/check">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --navy-light: #2D3E5F;
+    --blue: #2563EB;
+    --blue-light: #EFF6FF;
+    --amber: #D97706;
+    --amber-light: #FEF3C7;
+    --bg: #F8F9FA;
+    --white: #FFFFFF;
+    --text: #1B2A4A;
+    --text-secondary: #4B5563;
+    --border: #E5E7EB;
+    --red: #DC2626;
+    --red-light: #FEF2F2;
+    --green: #059669;
+    --green-light: #ECFDF5;
+    --yellow: #D97706;
+    --yellow-light: #FEF3C7;
+    --serif: 'Merriweather', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* ── Nav ── */
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+  .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); }
+  .nav-shield { font-size: 24px; }
+  .nav-name { font-family: var(--serif); font-size: 18px; font-weight: 900; }
+  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+  .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-links a.nav-active { color: var(--navy); font-weight: 600; }
+  .nav-cta { background: var(--blue); color: var(--white) !important; padding: 10px 22px; border-radius: 8px; font-weight: 600 !important; transition: background 0.2s !important; }
+  .nav-cta:hover { background: #1D4ED8 !important; }
+  .nav-hamburger { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--navy); }
+
+  /* ── Hero ── */
+  .hero {
+    background: var(--white);
+    padding: 64px 40px 72px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 16px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* ── Checker Tool ── */
+  .checker {
+    max-width: 720px;
+    margin: -36px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .checker-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+
+  .checker-textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 16px 20px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+    resize: vertical;
+    transition: border-color 0.2s;
+  }
+
+  .checker-textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+  }
+
+  .checker-textarea::placeholder {
+    color: #9CA3AF;
+  }
+
+  .checker-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 16px;
+  }
+
+  .checker-charcount {
+    font-size: 13px;
+    color: #9CA3AF;
+  }
+
+  .checker-btn {
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 14px 36px;
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .checker-btn:hover { background: var(--navy-light); }
+  .checker-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .checker-hint {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #9CA3AF;
+    text-align: center;
+  }
+
+  /* ── Results ── */
+  .result {
+    display: none;
+    margin-top: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .result.show { display: block; }
+
+  .result-verdict {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .result-verdict-icon { font-size: 28px; }
+
+  .result-verdict-text {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .result-confidence {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  .result-scam .result-verdict { background: var(--red-light); color: var(--red); }
+  .result-suspicious .result-verdict { background: var(--yellow-light); color: #92400E; }
+  .result-legitimate .result-verdict { background: var(--green-light); color: var(--green); }
+
+  .result-body {
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .result-section { margin-bottom: 20px; }
+  .result-section:last-child { margin-bottom: 0; }
+
+  .result-section h3 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .result-section p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  .result-flags {
+    list-style: none;
+    padding: 0;
+  }
+
+  .result-flags li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid #F3F4F6;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .result-flags li:last-child { border-bottom: none; }
+
+  .result-flags .flag-icon {
+    color: var(--red);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .result-steps {
+    list-style: none;
+    padding: 0;
+    counter-reset: steps;
+  }
+
+  .result-steps li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid #F3F4F6;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    counter-increment: steps;
+  }
+
+  .result-steps li:last-child { border-bottom: none; }
+
+  .result-steps li::before {
+    content: counter(steps);
+    background: var(--blue-light);
+    color: var(--blue);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .result-library-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 12px 20px;
+    background: var(--blue-light);
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .result-library-link:hover { background: #DBEAFE; }
+
+  .result-error {
+    display: none;
+    margin-top: 16px;
+    padding: 14px 20px;
+    background: var(--red-light);
+    color: var(--red);
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .result-error.show { display: block; }
+
+  /* ── Loading ── */
+  .checker-loading {
+    display: none;
+    text-align: center;
+    padding: 32px 0;
+  }
+
+  .checker-loading.show { display: block; }
+
+  .checker-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--navy);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 12px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .checker-loading p {
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  /* ── CTA ── */
+  .bottom-cta {
+    max-width: 720px;
+    margin: 48px auto 0;
+    padding: 0 20px 64px;
+    text-align: center;
+  }
+
+  .cta-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px 32px;
+  }
+
+  .cta-box h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .cta-box p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .signup-form {
+    display: flex;
+    gap: 12px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .signup-form input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--text);
+    transition: border-color 0.2s;
+  }
+
+  .signup-form input:focus { outline: none; border-color: var(--blue); }
+
+  .signup-form button {
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .signup-form button:hover { background: #1D4ED8; }
+  .signup-form button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  .signup-note {
+    font-size: 13px;
+    color: #9CA3AF;
+    margin-top: 10px;
+  }
+
+  .signup-success {
+    display: none;
+    color: var(--green);
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .signup-error {
+    display: none;
+    color: var(--red);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  /* ── Footer ── */
+  footer { background: var(--white); border-top: 1px solid var(--border); padding: 48px 40px; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 40px; }
+  .footer-brand { font-family: var(--serif); font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .footer-tagline { font-size: 13px; color: var(--text-secondary); max-width: 280px; }
+  .footer-links { display: flex; gap: 48px; }
+  .footer-col h5 { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); margin-bottom: 12px; }
+  .footer-col a { display: block; font-size: 14px; color: var(--text-secondary); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--blue); }
+  .footer-bottom { max-width: 1100px; margin: 24px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: #9CA3AF; text-align: center; }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; border-bottom: 1px solid var(--border); gap: 16px; }
+    .hero { padding: 40px 20px 56px; }
+    .hero h1 { font-size: 28px; }
+    .checker { margin-top: -24px; }
+    .checker-card { padding: 20px; }
+    .checker-textarea { min-height: 140px; }
+    .checker-actions { flex-direction: column; }
+    .checker-btn { width: 100%; }
+    .signup-form { flex-direction: column; }
+    .bottom-cta { padding: 0 20px 48px; }
+    footer { padding: 32px 20px; }
+    .footer-inner { flex-direction: column; gap: 32px; }
+    .footer-links { flex-direction: column; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-brand"><span class="nav-shield">🛡️</span><span class="nav-name">Is This a Scam?</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li><a href="/scams/trending">Trending</a></li>
+    <li><a href="/scams/">Scam Library</a></li>
+    <li><a href="/check" class="nav-active">Scam Checker</a></li>
+    <li><a href="/protect">Protect Yourself</a></li>
+    <li><a href="/#signup">Newsletter</a></li>
+    <li><a href="/checklist.pdf">Checklist</a></li>
+    <li><a href="/#signup" class="nav-cta">Get Free Alerts</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+</nav>
+
+<section class="hero">
+  <h1>Is This a Scam? Paste it. We'll tell you.</h1>
+  <p>Paste a suspicious email, text message, or phone script. We'll analyze it instantly and tell you exactly what to watch for.</p>
+</section>
+
+<div class="checker">
+  <div class="checker-card">
+    <textarea class="checker-textarea" id="checkerInput" placeholder="Paste the suspicious email, text, or message here..." maxlength="10000"></textarea>
+    <div class="checker-actions">
+      <span class="checker-charcount" id="charCount">0 / 10,000</span>
+      <button class="checker-btn" id="checkBtn" onclick="runCheck()">Check This</button>
+    </div>
+    <p class="checker-hint">Your text is analyzed by AI and is not stored.</p>
+
+    <div class="checker-loading" id="loading">
+      <div class="checker-spinner"></div>
+      <p>Analyzing for scam indicators...</p>
+    </div>
+
+    <div class="result-error" id="resultError"></div>
+
+    <div class="result" id="result">
+      <div class="result-verdict">
+        <span class="result-verdict-icon" id="verdictIcon"></span>
+        <span class="result-verdict-text" id="verdictText"></span>
+        <span class="result-confidence" id="verdictConfidence"></span>
+      </div>
+      <div class="result-body">
+        <div class="result-section">
+          <h3>Analysis</h3>
+          <p id="resultExplanation"></p>
+        </div>
+        <div class="result-section" id="flagsSection">
+          <h3>Red Flags Detected</h3>
+          <ul class="result-flags" id="resultFlags"></ul>
+        </div>
+        <div class="result-section" id="stepsSection">
+          <h3>What To Do Next</h3>
+          <ol class="result-steps" id="resultSteps"></ol>
+        </div>
+        <div id="libraryLinkContainer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-cta">
+  <div class="cta-box">
+    <h3>Want weekly scam alerts? Subscribe free.</h3>
+    <p>Every Wednesday we break down the latest scam targeting families — and tell you exactly what to say to stop it.</p>
+    <form class="signup-form" onsubmit="event.preventDefault(); handleSignup('ctaEmail', 'ctaBtn', 'ctaSuccess', 'ctaError');">
+      <input type="email" id="ctaEmail" placeholder="Your email address" required>
+      <button type="submit" id="ctaBtn">Subscribe Free</button>
+    </form>
+    <p class="signup-note">Free forever. One email per week. Unsubscribe anytime.</p>
+    <div class="signup-success" id="ctaSuccess">You're in! Check your inbox for a confirmation.</div>
+    <div class="signup-error" id="ctaError"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🛡️ Is This a Scam?</div>
+      <p class="footer-tagline">A free weekly fraud alert for anyone who wants to protect the people they love from scams.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="/">Home</a>
+        <a href="/scams/">Scam Library</a>
+        <a href="/check">Scam Checker</a>
+        <a href="/#signup">Newsletter</a>
+        <a href="/checklist.pdf">Checklist</a>
+      </div>
+      <div class="footer-col">
+        <h5>Resources</h5>
+        <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">Report Fraud (FTC)</a>
+        <a href="https://www.ic3.gov" target="_blank" rel="noopener">FBI IC3</a>
+        <a href="https://www.identitytheft.gov" target="_blank" rel="noopener">IdentityTheft.gov</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 isthisascam.news &middot; Not affiliated with any government agency. &middot; Built to protect families.
+  </div>
+</footer>
+
+<script>
+const CHECK_URL = 'https://check.isthisascam.news';
+
+const SCAM_TYPE_LABELS = {
+  'gift-card-scams': 'Gift Card Scams',
+  'phishing-smishing': 'Phishing & Smishing',
+  'grandparent-scams': 'Grandparent Scams',
+  'irs-ssa-impersonation': 'IRS & SSA Impersonation',
+  'tech-support-scams': 'Tech Support Scams',
+  'romance-scams': 'Romance Scams',
+  'investment-crypto-scams': 'Investment & Crypto Scams',
+  'prize-lottery-scams': 'Prize & Lottery Scams',
+  'medicare-scams': 'Medicare Scams',
+  'charity-scams': 'Charity Scams',
+  'government-grant-scams': 'Government Grant Scams',
+  'ai-voice-cloning-scams': 'AI Voice Cloning Scams',
+  'virtual-kidnapping': 'Virtual Kidnapping',
+  'sim-swapping': 'SIM Swapping',
+  'qr-code-scams': 'QR Code Scams',
+};
+
+const input = document.getElementById('checkerInput');
+const charCount = document.getElementById('charCount');
+
+input.addEventListener('input', () => {
+  charCount.textContent = `${input.value.length.toLocaleString()} / 10,000`;
+});
+
+async function runCheck() {
+  const text = input.value.trim();
+  if (!text) return;
+
+  const btn = document.getElementById('checkBtn');
+  const loading = document.getElementById('loading');
+  const resultEl = document.getElementById('result');
+  const errorEl = document.getElementById('resultError');
+
+  // Reset
+  resultEl.classList.remove('show', 'result-scam', 'result-suspicious', 'result-legitimate');
+  errorEl.classList.remove('show');
+  loading.classList.add('show');
+  btn.disabled = true;
+  btn.textContent = 'Checking...';
+
+  try {
+    const resp = await fetch(CHECK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text }),
+    });
+
+    if (resp.status === 429) {
+      throw new Error('Rate limit reached. You can check up to 10 messages per hour. Try again later.');
+    }
+
+    if (!resp.ok) {
+      const data = await resp.json().catch(() => ({}));
+      throw new Error(data.error || 'Analysis failed. Please try again.');
+    }
+
+    const data = await resp.json();
+    showResult(data);
+  } catch (e) {
+    errorEl.textContent = e.message;
+    errorEl.classList.add('show');
+  } finally {
+    loading.classList.remove('show');
+    btn.disabled = false;
+    btn.textContent = 'Check This';
+  }
+}
+
+function showResult(data) {
+  const resultEl = document.getElementById('result');
+
+  // Verdict
+  const verdictMap = {
+    scam: { icon: '🔴', text: 'This is likely a scam', class: 'result-scam' },
+    suspicious: { icon: '🟡', text: 'This looks suspicious', class: 'result-suspicious' },
+    legitimate: { icon: '🟢', text: 'This appears legitimate', class: 'result-legitimate' },
+  };
+  const v = verdictMap[data.verdict] || verdictMap.suspicious;
+
+  resultEl.className = `result show ${v.class}`;
+  document.getElementById('verdictIcon').textContent = v.icon;
+  document.getElementById('verdictText').textContent = v.text;
+  document.getElementById('verdictConfidence').textContent = `${data.confidence}% confidence`;
+
+  // Explanation
+  document.getElementById('resultExplanation').textContent = data.explanation;
+
+  // Red flags
+  const flagsSection = document.getElementById('flagsSection');
+  const flagsList = document.getElementById('resultFlags');
+  flagsList.innerHTML = '';
+  if (data.red_flags && data.red_flags.length > 0) {
+    flagsSection.style.display = '';
+    data.red_flags.forEach(flag => {
+      const li = document.createElement('li');
+      li.innerHTML = `<span class="flag-icon">&#9888;</span><span>${escapeHtml(flag)}</span>`;
+      flagsList.appendChild(li);
+    });
+  } else {
+    flagsSection.style.display = 'none';
+  }
+
+  // Action steps
+  const stepsSection = document.getElementById('stepsSection');
+  const stepsList = document.getElementById('resultSteps');
+  stepsList.innerHTML = '';
+  if (data.action_steps && data.action_steps.length > 0) {
+    stepsSection.style.display = '';
+    data.action_steps.forEach(step => {
+      const li = document.createElement('li');
+      li.textContent = step;
+      stepsList.appendChild(li);
+    });
+  } else {
+    stepsSection.style.display = 'none';
+  }
+
+  // Library link
+  const linkContainer = document.getElementById('libraryLinkContainer');
+  linkContainer.innerHTML = '';
+  if (data.scam_type && data.scam_type !== 'none' && data.scam_type !== 'other' && SCAM_TYPE_LABELS[data.scam_type]) {
+    const a = document.createElement('a');
+    a.href = `/scams/${data.scam_type}`;
+    a.className = 'result-library-link';
+    a.innerHTML = `&#128218; Learn more about ${escapeHtml(SCAM_TYPE_LABELS[data.scam_type])}`;
+    linkContainer.appendChild(a);
+  }
+
+  // Scroll to result
+  resultEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// Signup handler (same pattern as rest of site)
+async function handleSignup(inputId, btnId, successId, errorId) {
+  const email = document.getElementById(inputId).value.trim();
+  const btn = document.getElementById(btnId);
+  const successEl = document.getElementById(successId);
+  const errorEl = document.getElementById(errorId);
+  errorEl.style.display = 'none';
+  successEl.style.display = 'none';
+  if (!email || !email.includes('@')) {
+    errorEl.textContent = 'Please enter a valid email address.';
+    errorEl.style.display = 'block';
+    return;
+  }
+  btn.disabled = true;
+  const orig = btn.textContent;
+  btn.textContent = 'Sending...';
+  try {
+    const res = await fetch('https://signup.isthisascam.news/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+    if (res.ok) {
+      successEl.style.display = 'block';
+      document.getElementById(inputId).value = '';
+      btn.textContent = 'Subscribed!';
+    } else {
+      throw new Error('Signup failed');
+    }
+  } catch (e) {
+    errorEl.textContent = 'Something went wrong. Try again in a moment.';
+    errorEl.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = orig;
+  }
+}
+</script>
+
+</body>
+</html>
