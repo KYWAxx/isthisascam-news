@@ -1,0 +1,12 @@
+# 301 redirect all isthisascam.news traffic to zapscam.com
+# Cloudflare Pages supports _redirects file natively
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+/scams/*  https://zapscam.com/scams/:splat  301
+/check    https://zapscam.com/check         301
+/kit      https://zapscam.com/kit           301
+/support  https://zapscam.com/support       301
+/protect  https://zapscam.com/protect       301
+/checklist.pdf  https://zapscam.com/checklist.pdf  301
+/scam_protection_kit.pdf  https://zapscam.com/scam_protection_kit.pdf  301
+/*        https://zapscam.com/:splat        301
